@@ -2,6 +2,7 @@
 
 #include <cstdio>
 #include <cstring>
+#include <new>
 
 #include "cli.h"
 #include "convolver.h"
@@ -22,16 +23,13 @@ double g_stats[kMaxRanks * kStats];
 
 }  // namespace
 
-int main(int argc, char* argv[]) {
-  Timer total;
-  MPI_Init(&argc, &argv);
+static int run(int argc, char* argv[], const Timer& total) {
   int rank = 0, size = 1;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &size);
 
   if (size > kMaxRanks) {
     if (rank == 0) std::fprintf(stderr, "error: maximo %d procesos\n", kMaxRanks);
-    MPI_Finalize();
     return 1;
   }
 
@@ -42,7 +40,6 @@ int main(int argc, char* argv[]) {
       std::fprintf(stderr, "error: %s\n", err);
       printUsage(argv[0]);
     }
-    MPI_Finalize();
     return 1;
   }
 
@@ -76,7 +73,6 @@ int main(int argc, char* argv[]) {
   }
   MPI_Bcast(&ok, 1, MPI_INT, 0, MPI_COMM_WORLD);
   if (!ok) {
-    MPI_Finalize();
     return 2;
   }
   MPI_Bcast(header, 4, MPI_INT, 0, MPI_COMM_WORLD);
@@ -97,18 +93,22 @@ int main(int argc, char* argv[]) {
   t.start();
   Image local(width, h1 - h0, channels, maxval);
   if (rank == 0) {
+    MPI_Request requests[kMaxRanks];
+    int pending = 0;
     for (int r = 1; r < size; ++r) {
       int rh0, rh1;
       haloBounds(height, y0[r], y1[r], rh0, rh1);
       const int count = (rh1 - rh0) * rowInts;
       if (count > 0) {
-        MPI_Send(full.data() + (long)rh0 * rowInts, count, MPI_INT, r, kTagStrip, MPI_COMM_WORLD);
+        MPI_Isend(full.data() + (long)rh0 * rowInts, count, MPI_INT, r, kTagStrip, MPI_COMM_WORLD,
+                  &requests[pending++]);
       }
     }
     if (h1 > h0) {
       std::memcpy(local.data(), full.data() + (long)h0 * rowInts,
                   sizeof(int) * (size_t)(h1 - h0) * rowInts);
     }
+    MPI_Waitall(pending, requests, MPI_STATUSES_IGNORE);
   } else if (h1 > h0) {
     MPI_Recv(local.data(), (h1 - h0) * rowInts, MPI_INT, 0, kTagStrip, MPI_COMM_WORLD,
              MPI_STATUS_IGNORE);
@@ -183,7 +183,6 @@ int main(int argc, char* argv[]) {
 
     MPI_Bcast(&writeOk, 1, MPI_INT, 0, MPI_COMM_WORLD);
     if (!writeOk) {
-      MPI_Finalize();
       return 3;
     }
   }
@@ -197,6 +196,19 @@ int main(int argc, char* argv[]) {
     }
   }
 
-  MPI_Finalize();
   return 0;
+}
+
+int main(int argc, char* argv[]) {
+  Timer total;
+  MPI_Init(&argc, &argv);
+  int code = 0;
+  try {
+    code = run(argc, argv, total);
+  } catch (const std::bad_alloc&) {
+    std::fprintf(stderr, "error: memoria insuficiente\n");
+    MPI_Abort(MPI_COMM_WORLD, 2);
+  }
+  MPI_Finalize();
+  return code;
 }
