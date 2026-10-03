@@ -1,0 +1,28 @@
+x-node: &node
+  build: ./docker
+  image: mp2-cluster
+  working_dir: /work
+  volumes:
+    - .:/work
+  environment:
+    OMPI_MCA_btl_tcp_if_include: eth0
+    OMPI_MCA_oob_tcp_if_include: eth0
+  networks:
+    - mpinet
+
+services:
+  node1:
+    <<: *node
+    hostname: node1
+  node2:
+    <<: *node
+    hostname: node2
+  node3:
+    <<: *node
+    hostname: node3
+  node4:
+    <<: *node
+    hostname: node4
+
+networks:
+  mpinet: {}
