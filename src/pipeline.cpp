@@ -1,6 +1,7 @@
 #include "pipeline.h"
 
 #include <cstdio>
+#include <new>
 
 #include "cli.h"
 #include "filter.h"
@@ -8,7 +9,8 @@
 #include "pnm_io.h"
 #include "timer.h"
 
-int runPipeline(const char* design, int threads, int argc, char* argv[], FilterStrategy strategy) {
+int runPipeline(const char* design, int threads, int argc, char* argv[], FilterStrategy strategy,
+                ReportHook afterFilter) {
   Timer total;
   CliOptions opts;
   char err[256];
@@ -29,12 +31,19 @@ int runPipeline(const char* design, int threads, int argc, char* argv[], FilterS
 
   for (int i = 0; i < opts.filterCount; ++i) {
     const Filter& f = *opts.filters[i];
-    Image dst = src.cloneEmpty();
+    Image dst;
+    try {
+      dst = src.cloneEmpty();
+    } catch (const std::bad_alloc&) {
+      std::fprintf(stderr, "error: memoria insuficiente para la imagen de salida\n");
+      return 2;
+    }
 
     t.start();
     strategy(f, src, dst);
     const double filterWall = t.wallMs();
     const double filterCpu = t.cpuMs();
+    if (afterFilter != nullptr) afterFilter(f, src);
 
     char path[1024];
     if (opts.singleOutput) {
