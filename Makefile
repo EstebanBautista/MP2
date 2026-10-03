@@ -2,9 +2,10 @@ CXX      := g++
 CXXFLAGS := -O2 -Wall -Wextra -std=c++17
 CPPFLAGS := -Iheaders -Itests
 
-TEST_SRC := tests/test_main.cpp
+CORE_SRC := src/image.cpp
+TEST_SRC := tests/test_main.cpp tests/test_image.cpp
 
-run_tests: $(TEST_SRC)
+run_tests: $(CORE_SRC) $(TEST_SRC)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $@
 
 test: run_tests

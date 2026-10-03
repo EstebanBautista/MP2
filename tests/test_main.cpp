@@ -6,6 +6,7 @@ int g_checks = 0;
 int g_failures = 0;
 
 int main() {
+  test_image();
   std::printf("%d checks, %d failures\n", g_checks, g_failures);
   return g_failures == 0 ? 0 : 1;
 }

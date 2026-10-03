@@ -15,4 +15,22 @@ extern int g_failures;
     }                                                                        \
   } while (0)
 
+#include <cstring>
+
+#include "image.h"
+
+void test_image();
+
+inline void fillPattern(Image& img) {
+  const long n = img.size();
+  int* d = img.data();
+  for (long i = 0; i < n; ++i) d[i] = (int)((i * 37 + 11) % (img.maxval() + 1));
+}
+
+inline bool sameImage(const Image& a, const Image& b) {
+  return a.width() == b.width() && a.height() == b.height() &&
+         a.channels() == b.channels() && a.maxval() == b.maxval() &&
+         std::memcmp(a.data(), b.data(), sizeof(int) * (size_t)a.size()) == 0;
+}
+
 #endif
