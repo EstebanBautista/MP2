@@ -36,6 +36,15 @@ void printTime(const TimeReport& r) {
   std::fflush(stdout);
 }
 
+void printTotal(const char* design, const char* image, int threads, int nodes, int rank,
+                int filters, double wallMs, double cpuMs) {
+  std::printf(
+      "TOTAL design=%s image=%s threads=%d nodes=%d rank=%d filters=%d total_wall_ms=%.3f "
+      "total_cpu_ms=%.3f\n",
+      design, image, threads, nodes, rank, filters, wallMs, cpuMs);
+  std::fflush(stdout);
+}
+
 const char* baseName(const char* path) {
   if (std::strcmp(path, "-") == 0) return "stdin";
   const char* slash = std::strrchr(path, '/');

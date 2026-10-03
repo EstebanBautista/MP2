@@ -9,6 +9,7 @@
 #include "timer.h"
 
 int runPipeline(const char* design, int threads, int argc, char* argv[], FilterStrategy strategy) {
+  Timer total;
   CliOptions opts;
   char err[256];
   if (!parseCli(argc, argv, opts, err, sizeof err)) {
@@ -64,5 +65,7 @@ int runPipeline(const char* design, int threads, int argc, char* argv[], FilterS
     r.totalCpuMs = readCpu + filterCpu + writeCpu;
     printTime(r);
   }
+  printTotal(design, baseName(opts.input), threads, 1, 0, opts.filterCount, total.wallMs(),
+             total.cpuMs());
   return 0;
 }
