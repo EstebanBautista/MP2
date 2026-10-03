@@ -1,4 +1,5 @@
 CXX      := g++
+MPICXX   := mpicxx
 CXXFLAGS := -O2 -Wall -Wextra -std=c++17
 CPPFLAGS := -Iheaders -Itests
 
@@ -10,7 +11,7 @@ TEST_SRC := tests/test_main.cpp tests/test_image.cpp tests/test_pnm_io.cpp tests
             tests/test_filters.cpp tests/test_convolver.cpp tests/test_cli.cpp \
             tests/test_parallel.cpp tests/test_strips.cpp
 
-BINS := processor filterer th_filterer omp_filterer
+BINS := processor filterer th_filterer omp_filterer mpi_filterer
 
 all: $(BINS)
 
@@ -25,6 +26,9 @@ th_filterer: $(CORE_SRC) $(FILTER_SRC) src/threaded_convolver.cpp src/th_filtere
 
 omp_filterer: $(CORE_SRC) $(FILTER_SRC) src/omp_convolver.cpp src/omp_filterer.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -fopenmp $^ -o $@
+
+mpi_filterer: $(CORE_SRC) $(FILTER_SRC) $(MPI_SRC) src/mpi_filterer.cpp
+	$(MPICXX) $(CPPFLAGS) -DOMPI_SKIP_MPICXX $(CXXFLAGS) $^ -o $@
 
 run_tests: $(CORE_SRC) $(FILTER_SRC) $(PAR_SRC) $(MPI_SRC) $(TEST_SRC)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -pthread -fopenmp $^ -o $@
