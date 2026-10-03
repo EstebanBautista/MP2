@@ -1,6 +1,7 @@
 #include "convolver.h"
 #include "filters.h"
 #include "image.h"
+#include "omp_convolver.h"
 #include "test.h"
 #include "threaded_convolver.h"
 
@@ -29,6 +30,10 @@ static void checkSameAsSequential(int w, int h, int channels) {
     double cpu[ThreadedConvolver::kRegions];
     ThreadedConvolver::applyQuadrants(f, src, th, cpu);
     CHECK(sameImage(seq, th));
+
+    Image omp = src.cloneEmpty();
+    OmpConvolver::apply(f, src, omp);
+    CHECK(sameImage(seq, omp));
   }
 }
 
