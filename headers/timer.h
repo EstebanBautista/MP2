@@ -34,6 +34,8 @@ struct TimeReport {
 };
 
 void printTime(const TimeReport& r);
+void printTotal(const char* design, const char* image, int threads, int nodes, int rank,
+                int filters, double wallMs, double cpuMs);
 const char* baseName(const char* path);
 
 #endif

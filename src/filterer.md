@@ -20,4 +20,6 @@ Aplica filtros de convolución 3×3 a imágenes PGM/PPM en un solo hilo.
     ./filterer images/lena.pgm output/lena.pgm --f all             # los cinco filtros
 
 Con varios filtros se escribe `<salida>_<filtro>.<ext>`. Cada filtro imprime una línea `TIME`
-con tiempos de lectura, filtrado (pared y CPU), escritura y total.
+con tiempos de lectura, filtrado (pared y CPU) y escritura; su `total_*` es lectura + filtrado +
+escritura de ese filtro. Al final, una línea `TOTAL` da el tiempo de ejecución completo del
+programa (pared y CPU), medido de principio a fin una sola vez.
