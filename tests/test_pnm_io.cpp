@@ -90,5 +90,30 @@ void test_pnm_io() {
     Image src(1, 1, 1, 255);
     CHECK(!PnmWriter::write("output/carpeta_inexistente/x.pgm", src, err, 256));
     CHECK(std::strstr(err, "no se pudo escribir") != nullptr);
+    CHECK(std::strstr(err, "No such file") != nullptr);
+  }
+  {
+    Image img;  // cr-only line endings with a comment
+    CHECK(parseText("P2\r# comentario\r3 1\r255\r1 2 3\r", img, err));
+    CHECK(img.width() == 3 && img.at(2, 0, 0) == 3);
+  }
+  {
+    Image wide(40, 2, 3, 255);
+    fillPattern(wide);
+    char* buf = nullptr;
+    long len = PnmWriter::toBuffer(wide, buf);
+    int lineLen = 0, longest = 0;
+    for (long i = 0; i < len; ++i) {
+      if (buf[i] == '\n') {
+        lineLen = 0;
+      } else if (++lineLen > longest) {
+        longest = lineLen;
+      }
+    }
+    Image back;
+    CHECK(PnmReader::parse(buf, len, back, err, 256));
+    delete[] buf;
+    CHECK(longest <= 70);
+    CHECK(sameImage(wide, back));
   }
 }
