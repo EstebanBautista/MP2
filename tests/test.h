@@ -20,6 +20,7 @@ extern int g_failures;
 #include "image.h"
 
 void test_image();
+void test_pnm_io();
 
 inline void fillPattern(Image& img) {
   const long n = img.size();
