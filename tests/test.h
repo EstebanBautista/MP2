@@ -22,6 +22,7 @@ extern int g_failures;
 void test_image();
 void test_pnm_io();
 void test_timer();
+void test_filters();
 
 inline void fillPattern(Image& img) {
   const long n = img.size();

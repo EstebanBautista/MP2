@@ -3,7 +3,9 @@ CXXFLAGS := -O2 -Wall -Wextra -std=c++17
 CPPFLAGS := -Iheaders -Itests
 
 CORE_SRC := src/image.cpp src/pnm_io.cpp src/timer.cpp
-TEST_SRC := tests/test_main.cpp tests/test_image.cpp tests/test_pnm_io.cpp tests/test_timer.cpp
+FILTER_SRC := src/filters.cpp
+TEST_SRC := tests/test_main.cpp tests/test_image.cpp tests/test_pnm_io.cpp tests/test_timer.cpp \
+            tests/test_filters.cpp
 
 BINS := processor
 
@@ -12,7 +14,7 @@ all: $(BINS)
 processor: $(CORE_SRC) src/processor.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $@
 
-run_tests: $(CORE_SRC) $(TEST_SRC)
+run_tests: $(CORE_SRC) $(FILTER_SRC) $(TEST_SRC)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) $^ -o $@
 
 test: run_tests

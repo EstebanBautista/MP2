@@ -9,6 +9,7 @@ int main() {
   test_image();
   test_pnm_io();
   test_timer();
+  test_filters();
   std::printf("%d checks, %d failures\n", g_checks, g_failures);
   return g_failures == 0 ? 0 : 1;
 }
