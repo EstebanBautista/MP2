@@ -1,63 +1,44 @@
-#include <iostream>
+#include <cstdio>
 
-#define MAX_FILENAME 256
-#define BUFFER_SIZE 1024
+#include "image.h"
+#include "pnm_io.h"
+#include "timer.h"
 
 int main(int argc, char* argv[]) {
-
-  char buffer[BUFFER_SIZE];
-  char magic[3];
-  int width;
-  int height;
-  int max_color;
-  int *pixels;
-
-  if(argc<2){
-    std::cout << "missing input and output paths\n";
-    std::cout << "usage:" << argv[0] << " input_image.pgm output_image.pgm" << std::endl;
-    std::cout << "or "<< argv[0] << "input_image.ppm output_image.ppm" << std::endl;
+  if (argc != 3) {
+    std::fprintf(stderr, "uso: %s <entrada.pgm|entrada.ppm|-> <salida>\n", argv[0]);
+    std::fprintf(stderr, "  use '-' como entrada para leer desde la entrada estandar\n");
     return 1;
   }
-  // abrir archivo
-  FILE *file = fopen(argv[1], "r");
-  if (file == NULL) {
-    std::cout << "Error, incorrect path or incorrect file."<< std::endl;
-    return 1;
-  }
-  // Leer y mostrar línea por línea
-  fscanf(file, "%2s", magic);  // magic number
-  fscanf(file, "%d %d", &width, &height);
-  fscanf(file, "%d", &max_color);
+  char err[256];
+  Image img;
 
-  int pixel_count = width * height;
-  if (strcmp(magic, "P3") != 0){
-    int pixel_count = width * height * 3;
+  Timer t;
+  if (!PnmReader::read(argv[1], img, err, sizeof err)) {
+    std::fprintf(stderr, "error: %s\n", err);
+    return 2;
   }
+  const double readMs = t.wallMs();
+  const double readCpu = t.cpuMs();
 
-  pixels = (int *) malloc(pixel_count);
-  int value;
-
-  for (int i = 0; i < pixel_count; i++) {
-      if (fscanf(file, "%d", &value) != 1) {
-        std::cout << "Error reading pixels."<< std::endl;
-        free(pixels);
-        fclose(file);
-        return 0;
-      }
-      pixels[i] = value;
+  t.start();
+  if (!PnmWriter::write(argv[2], img, err, sizeof err)) {
+    std::fprintf(stderr, "error: %s\n", err);
+    return 3;
   }
-  fclose(file);
+  const double writeMs = t.wallMs();
+  const double writeCpu = t.cpuMs();
 
-  FILE * output = fopen(argv[2], "w");
-  (void) fprintf(output, "%s\n%d %d\n%d\n", magic, width, height, max_color);
-  for (int i = 0; i < pixel_count; i++) {
-    fprintf(output, "%d\n", pixels[i]);
-  }
-  (void) fclose(output);
+  TimeReport r = {};
+  r.design = "processor";
+  r.image = baseName(argv[1]);
+  r.filter = "none";
+  r.threads = 1;
+  r.nodes = 1;
+  r.readMs = readMs;
+  r.writeMs = writeMs;
+  r.totalWallMs = readMs + writeMs;
+  r.totalCpuMs = readCpu + writeCpu;
+  printTime(r);
   return 0;
-
-
-  
-  
-
 }

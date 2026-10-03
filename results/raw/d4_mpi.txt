@@ -1,0 +1,560 @@
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=31.314 comm_ms=1.884 filter_wall_ms=25.402 filter_cpu_ms=25.401 write_ms=30.848 total_wall_ms=89.448 total_cpu_ms=56.888
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=31.314 comm_ms=1.941 filter_wall_ms=43.329 filter_cpu_ms=43.321 write_ms=23.905 total_wall_ms=100.489 total_cpu_ms=73.193
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=31.314 comm_ms=1.897 filter_wall_ms=25.204 filter_cpu_ms=25.204 write_ms=29.456 total_wall_ms=87.871 total_cpu_ms=56.755
+TOTAL rep=1 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=438.792 total_cpu_ms=186.081
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=32.045 comm_ms=2.041 filter_wall_ms=25.771 filter_cpu_ms=25.765 write_ms=30.799 total_wall_ms=90.657 total_cpu_ms=57.105
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=32.045 comm_ms=1.997 filter_wall_ms=32.665 filter_cpu_ms=32.665 write_ms=25.302 total_wall_ms=92.010 total_cpu_ms=63.255
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=32.045 comm_ms=1.915 filter_wall_ms=25.840 filter_cpu_ms=25.839 write_ms=33.457 total_wall_ms=93.257 total_cpu_ms=57.703
+TOTAL rep=2 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=435.503 total_cpu_ms=177.398
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=29.328 comm_ms=1.808 filter_wall_ms=25.401 filter_cpu_ms=25.400 write_ms=30.000 total_wall_ms=86.536 total_cpu_ms=56.351
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=29.328 comm_ms=1.864 filter_wall_ms=32.387 filter_cpu_ms=32.386 write_ms=24.013 total_wall_ms=87.591 total_cpu_ms=61.530
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=29.328 comm_ms=1.817 filter_wall_ms=25.705 filter_cpu_ms=25.703 write_ms=29.038 total_wall_ms=85.887 total_cpu_ms=56.619
+TOTAL rep=3 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=425.146 total_cpu_ms=174.446
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=29.150 comm_ms=1.842 filter_wall_ms=25.545 filter_cpu_ms=25.545 write_ms=30.364 total_wall_ms=86.901 total_cpu_ms=56.580
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=29.150 comm_ms=1.951 filter_wall_ms=33.756 filter_cpu_ms=33.756 write_ms=24.168 total_wall_ms=89.026 total_cpu_ms=63.900
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=29.150 comm_ms=1.953 filter_wall_ms=26.128 filter_cpu_ms=26.127 write_ms=31.767 total_wall_ms=88.999 total_cpu_ms=57.219
+TOTAL rep=4 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=431.780 total_cpu_ms=178.706
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=30.192 comm_ms=2.055 filter_wall_ms=26.035 filter_cpu_ms=26.033 write_ms=32.295 total_wall_ms=90.577 total_cpu_ms=58.215
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=30.192 comm_ms=2.086 filter_wall_ms=32.690 filter_cpu_ms=32.689 write_ms=23.984 total_wall_ms=88.952 total_cpu_ms=63.043
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=30.192 comm_ms=2.052 filter_wall_ms=26.592 filter_cpu_ms=26.591 write_ms=29.437 total_wall_ms=88.272 total_cpu_ms=58.665
+TOTAL rep=5 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=432.521 total_cpu_ms=178.930
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=26.449 comm_ms=2.278 filter_wall_ms=12.802 filter_cpu_ms=12.801 write_ms=28.110 total_wall_ms=69.639 total_cpu_ms=44.915
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=3.600 filter_wall_ms=12.810 filter_cpu_ms=12.799 write_ms=0.000 total_wall_ms=16.410 total_cpu_ms=16.399
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=26.449 comm_ms=2.270 filter_wall_ms=16.502 filter_cpu_ms=16.502 write_ms=30.098 total_wall_ms=75.319 total_cpu_ms=52.714
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.196 filter_wall_ms=15.890 filter_cpu_ms=15.890 write_ms=0.000 total_wall_ms=18.086 total_cpu_ms=18.086
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=26.449 comm_ms=2.215 filter_wall_ms=12.987 filter_cpu_ms=12.987 write_ms=27.064 total_wall_ms=68.716 total_cpu_ms=44.421
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.497 filter_wall_ms=12.687 filter_cpu_ms=12.688 write_ms=0.000 total_wall_ms=15.184 total_cpu_ms=15.184
+TOTAL rep=1 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=395.028 total_cpu_ms=147.313
+TOTAL rep=1 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=395.033 total_cpu_ms=184.137
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=28.921 comm_ms=2.559 filter_wall_ms=12.778 filter_cpu_ms=12.777 write_ms=28.585 total_wall_ms=72.843 total_cpu_ms=45.172
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=4.102 filter_wall_ms=12.767 filter_cpu_ms=12.767 write_ms=0.000 total_wall_ms=16.869 total_cpu_ms=16.870
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=28.921 comm_ms=2.374 filter_wall_ms=16.473 filter_cpu_ms=16.472 write_ms=23.483 total_wall_ms=71.252 total_cpu_ms=46.932
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.150 filter_wall_ms=16.004 filter_cpu_ms=16.003 write_ms=0.000 total_wall_ms=18.154 total_cpu_ms=18.153
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=28.921 comm_ms=2.219 filter_wall_ms=12.964 filter_cpu_ms=12.963 write_ms=27.355 total_wall_ms=71.459 total_cpu_ms=44.201
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.426 filter_wall_ms=12.735 filter_cpu_ms=12.735 write_ms=0.000 total_wall_ms=15.161 total_cpu_ms=15.160
+TOTAL rep=2 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=391.314 total_cpu_ms=141.946
+TOTAL rep=2 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=391.317 total_cpu_ms=181.720
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=28.123 comm_ms=2.733 filter_wall_ms=12.982 filter_cpu_ms=12.981 write_ms=37.027 total_wall_ms=80.864 total_cpu_ms=49.892
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=4.240 filter_wall_ms=12.759 filter_cpu_ms=12.759 write_ms=0.000 total_wall_ms=16.999 total_cpu_ms=16.999
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=28.123 comm_ms=2.360 filter_wall_ms=16.381 filter_cpu_ms=16.381 write_ms=23.335 total_wall_ms=70.198 total_cpu_ms=46.845
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.030 filter_wall_ms=15.920 filter_cpu_ms=15.919 write_ms=0.000 total_wall_ms=17.950 total_cpu_ms=17.949
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=28.123 comm_ms=2.375 filter_wall_ms=12.943 filter_cpu_ms=12.943 write_ms=28.263 total_wall_ms=71.704 total_cpu_ms=44.753
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.528 filter_wall_ms=12.671 filter_cpu_ms=12.670 write_ms=0.000 total_wall_ms=15.199 total_cpu_ms=15.198
+TOTAL rep=3 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=399.722 total_cpu_ms=146.447
+TOTAL rep=3 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=399.730 total_cpu_ms=189.401
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=30.080 comm_ms=2.368 filter_wall_ms=13.220 filter_cpu_ms=13.208 write_ms=30.357 total_wall_ms=76.024 total_cpu_ms=44.826
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=4.125 filter_wall_ms=12.806 filter_cpu_ms=12.806 write_ms=0.000 total_wall_ms=16.932 total_cpu_ms=16.933
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=30.080 comm_ms=2.315 filter_wall_ms=16.615 filter_cpu_ms=16.611 write_ms=27.838 total_wall_ms=76.848 total_cpu_ms=50.060
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.214 filter_wall_ms=16.049 filter_cpu_ms=16.048 write_ms=0.000 total_wall_ms=18.263 total_cpu_ms=18.262
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=30.080 comm_ms=2.289 filter_wall_ms=13.303 filter_cpu_ms=13.302 write_ms=33.000 total_wall_ms=78.671 total_cpu_ms=48.191
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.784 filter_wall_ms=12.841 filter_cpu_ms=12.841 write_ms=0.000 total_wall_ms=15.625 total_cpu_ms=15.625
+TOTAL rep=4 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=405.668 total_cpu_ms=149.052
+TOTAL rep=4 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=405.672 total_cpu_ms=203.232
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=28.765 comm_ms=2.336 filter_wall_ms=12.834 filter_cpu_ms=12.834 write_ms=29.162 total_wall_ms=73.098 total_cpu_ms=45.246
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=3.625 filter_wall_ms=12.761 filter_cpu_ms=12.761 write_ms=0.000 total_wall_ms=16.386 total_cpu_ms=16.387
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=28.765 comm_ms=2.347 filter_wall_ms=16.434 filter_cpu_ms=16.433 write_ms=23.908 total_wall_ms=71.453 total_cpu_ms=47.036
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.901 filter_wall_ms=16.148 filter_cpu_ms=16.148 write_ms=0.000 total_wall_ms=18.049 total_cpu_ms=18.050
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=28.765 comm_ms=2.255 filter_wall_ms=12.975 filter_cpu_ms=12.975 write_ms=28.322 total_wall_ms=72.317 total_cpu_ms=44.628
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.471 filter_wall_ms=12.723 filter_cpu_ms=12.723 write_ms=0.000 total_wall_ms=15.194 total_cpu_ms=15.195
+TOTAL rep=5 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=392.373 total_cpu_ms=141.874
+TOTAL rep=5 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=392.378 total_cpu_ms=182.693
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=30.724 comm_ms=4.037 filter_wall_ms=6.736 filter_cpu_ms=6.737 write_ms=30.589 total_wall_ms=72.087 total_cpu_ms=40.577
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.188 filter_wall_ms=6.425 filter_cpu_ms=6.424 write_ms=0.000 total_wall_ms=10.613 total_cpu_ms=10.612
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=5.339 filter_wall_ms=6.390 filter_cpu_ms=6.391 write_ms=0.000 total_wall_ms=11.730 total_cpu_ms=11.731
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.902 filter_wall_ms=6.437 filter_cpu_ms=6.437 write_ms=0.000 total_wall_ms=11.339 total_cpu_ms=11.236
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=30.724 comm_ms=4.090 filter_wall_ms=8.274 filter_cpu_ms=8.274 write_ms=24.527 total_wall_ms=67.614 total_cpu_ms=40.480
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.155 filter_wall_ms=8.208 filter_cpu_ms=8.208 write_ms=0.000 total_wall_ms=9.363 total_cpu_ms=9.363
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.784 filter_wall_ms=8.026 filter_cpu_ms=8.026 write_ms=0.000 total_wall_ms=10.810 total_cpu_ms=10.810
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.412 filter_wall_ms=7.924 filter_cpu_ms=7.923 write_ms=0.000 total_wall_ms=11.336 total_cpu_ms=11.233
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=30.724 comm_ms=3.976 filter_wall_ms=10.120 filter_cpu_ms=10.120 write_ms=29.919 total_wall_ms=74.739 total_cpu_ms=43.290
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.519 filter_wall_ms=10.031 filter_cpu_ms=10.032 write_ms=0.000 total_wall_ms=11.550 total_cpu_ms=11.552
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=6.617 filter_wall_ms=6.358 filter_cpu_ms=6.358 write_ms=0.000 total_wall_ms=12.976 total_cpu_ms=12.975
+TIME rep=1 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.699 filter_wall_ms=8.695 filter_cpu_ms=8.695 write_ms=0.000 total_wall_ms=13.394 total_cpu_ms=13.292
+TOTAL rep=1 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=391.825 total_cpu_ms=126.844
+TOTAL rep=1 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=390.953 total_cpu_ms=183.458
+TOTAL rep=1 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=390.844 total_cpu_ms=184.684
+TOTAL rep=1 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=391.191 total_cpu_ms=183.843
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=30.457 comm_ms=5.887 filter_wall_ms=6.697 filter_cpu_ms=6.697 write_ms=33.161 total_wall_ms=76.202 total_cpu_ms=42.493
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.093 filter_wall_ms=6.751 filter_cpu_ms=6.752 write_ms=0.000 total_wall_ms=10.844 total_cpu_ms=10.846
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.142 filter_wall_ms=10.772 filter_cpu_ms=6.691 write_ms=0.000 total_wall_ms=12.914 total_cpu_ms=8.833
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.569 filter_wall_ms=10.618 filter_cpu_ms=6.654 write_ms=0.000 total_wall_ms=13.188 total_cpu_ms=9.037
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=30.457 comm_ms=4.141 filter_wall_ms=8.133 filter_cpu_ms=8.134 write_ms=25.849 total_wall_ms=68.580 total_cpu_ms=40.277
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.096 filter_wall_ms=8.048 filter_cpu_ms=8.048 write_ms=0.000 total_wall_ms=9.144 total_cpu_ms=9.144
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.626 filter_wall_ms=7.906 filter_cpu_ms=7.906 write_ms=0.000 total_wall_ms=10.531 total_cpu_ms=10.533
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.365 filter_wall_ms=7.888 filter_cpu_ms=7.888 write_ms=0.000 total_wall_ms=11.253 total_cpu_ms=11.066
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=30.457 comm_ms=4.004 filter_wall_ms=6.656 filter_cpu_ms=6.657 write_ms=30.509 total_wall_ms=71.626 total_cpu_ms=39.865
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.284 filter_wall_ms=6.669 filter_cpu_ms=6.667 write_ms=0.000 total_wall_ms=7.952 total_cpu_ms=7.951
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.999 filter_wall_ms=6.333 filter_cpu_ms=6.333 write_ms=0.000 total_wall_ms=9.332 total_cpu_ms=9.333
+TIME rep=2 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.356 filter_wall_ms=6.640 filter_cpu_ms=6.639 write_ms=0.000 total_wall_ms=9.995 total_cpu_ms=9.808
+TOTAL rep=2 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=393.216 total_cpu_ms=126.566
+TOTAL rep=2 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=392.895 total_cpu_ms=185.165
+TOTAL rep=2 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=393.163 total_cpu_ms=179.561
+TOTAL rep=2 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=393.069 total_cpu_ms=182.166
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=31.186 comm_ms=6.548 filter_wall_ms=6.730 filter_cpu_ms=6.731 write_ms=35.976 total_wall_ms=80.440 total_cpu_ms=46.430
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.071 filter_wall_ms=6.494 filter_cpu_ms=6.494 write_ms=0.000 total_wall_ms=10.565 total_cpu_ms=10.566
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.243 filter_wall_ms=10.637 filter_cpu_ms=10.637 write_ms=0.000 total_wall_ms=12.880 total_cpu_ms=12.881
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.554 filter_wall_ms=11.330 filter_cpu_ms=11.330 write_ms=0.000 total_wall_ms=13.884 total_cpu_ms=13.784
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=31.186 comm_ms=4.361 filter_wall_ms=8.287 filter_cpu_ms=8.288 write_ms=26.184 total_wall_ms=70.018 total_cpu_ms=41.074
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.191 filter_wall_ms=8.121 filter_cpu_ms=8.120 write_ms=0.000 total_wall_ms=9.312 total_cpu_ms=9.312
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.125 filter_wall_ms=8.791 filter_cpu_ms=8.792 write_ms=0.000 total_wall_ms=10.917 total_cpu_ms=10.918
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.971 filter_wall_ms=8.610 filter_cpu_ms=8.610 write_ms=0.000 total_wall_ms=11.581 total_cpu_ms=11.480
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=31.186 comm_ms=3.912 filter_wall_ms=7.641 filter_cpu_ms=7.642 write_ms=31.230 total_wall_ms=73.969 total_cpu_ms=40.998
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.328 filter_wall_ms=6.632 filter_cpu_ms=6.632 write_ms=0.000 total_wall_ms=8.960 total_cpu_ms=8.961
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.790 filter_wall_ms=7.521 filter_cpu_ms=7.521 write_ms=0.000 total_wall_ms=10.312 total_cpu_ms=10.312
+TIME rep=3 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.313 filter_wall_ms=7.593 filter_cpu_ms=7.593 write_ms=0.000 total_wall_ms=10.906 total_cpu_ms=10.806
+TOTAL rep=3 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=401.916 total_cpu_ms=132.625
+TOTAL rep=3 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=401.262 total_cpu_ms=192.442
+TOTAL rep=3 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=401.513 total_cpu_ms=192.530
+TOTAL rep=3 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=401.723 total_cpu_ms=193.151
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=29.342 comm_ms=4.168 filter_wall_ms=6.630 filter_cpu_ms=6.630 write_ms=27.166 total_wall_ms=67.307 total_cpu_ms=42.998
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.233 filter_wall_ms=6.823 filter_cpu_ms=6.824 write_ms=0.000 total_wall_ms=11.056 total_cpu_ms=11.057
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=5.181 filter_wall_ms=6.869 filter_cpu_ms=6.869 write_ms=0.000 total_wall_ms=12.049 total_cpu_ms=12.050
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=5.270 filter_wall_ms=6.661 filter_cpu_ms=6.661 write_ms=0.000 total_wall_ms=11.931 total_cpu_ms=11.930
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=29.342 comm_ms=4.814 filter_wall_ms=11.379 filter_cpu_ms=11.379 write_ms=22.946 total_wall_ms=68.481 total_cpu_ms=46.365
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=3.361 filter_wall_ms=8.992 filter_cpu_ms=8.991 write_ms=0.000 total_wall_ms=12.353 total_cpu_ms=12.352
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.112 filter_wall_ms=12.479 filter_cpu_ms=12.479 write_ms=0.000 total_wall_ms=14.592 total_cpu_ms=14.592
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=6.320 filter_wall_ms=8.946 filter_cpu_ms=8.947 write_ms=0.000 total_wall_ms=15.266 total_cpu_ms=15.266
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=29.342 comm_ms=3.702 filter_wall_ms=6.727 filter_cpu_ms=6.726 write_ms=31.757 total_wall_ms=71.528 total_cpu_ms=41.732
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.698 filter_wall_ms=6.396 filter_cpu_ms=6.395 write_ms=0.000 total_wall_ms=8.094 total_cpu_ms=8.093
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.873 filter_wall_ms=6.482 filter_cpu_ms=6.482 write_ms=0.000 total_wall_ms=9.356 total_cpu_ms=9.356
+TIME rep=4 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.584 filter_wall_ms=6.401 filter_cpu_ms=6.401 write_ms=0.000 total_wall_ms=9.985 total_cpu_ms=9.983
+TOTAL rep=4 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=388.018 total_cpu_ms=135.441
+TOTAL rep=4 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=387.625 total_cpu_ms=180.889
+TOTAL rep=4 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=387.400 total_cpu_ms=173.929
+TOTAL rep=4 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=387.823 total_cpu_ms=181.366
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=25.934 comm_ms=3.919 filter_wall_ms=6.676 filter_cpu_ms=6.676 write_ms=28.932 total_wall_ms=65.460 total_cpu_ms=40.578
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.154 filter_wall_ms=6.435 filter_cpu_ms=6.435 write_ms=0.000 total_wall_ms=10.589 total_cpu_ms=10.589
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=5.168 filter_wall_ms=6.376 filter_cpu_ms=6.376 write_ms=0.000 total_wall_ms=11.543 total_cpu_ms=11.544
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.827 filter_wall_ms=6.453 filter_cpu_ms=6.452 write_ms=0.000 total_wall_ms=11.280 total_cpu_ms=11.178
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=25.934 comm_ms=3.909 filter_wall_ms=8.311 filter_cpu_ms=8.311 write_ms=28.854 total_wall_ms=67.009 total_cpu_ms=43.407
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.230 filter_wall_ms=8.150 filter_cpu_ms=8.150 write_ms=0.000 total_wall_ms=9.380 total_cpu_ms=9.380
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.716 filter_wall_ms=7.955 filter_cpu_ms=7.954 write_ms=0.000 total_wall_ms=10.670 total_cpu_ms=10.671
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.417 filter_wall_ms=7.890 filter_cpu_ms=7.890 write_ms=0.000 total_wall_ms=11.307 total_cpu_ms=11.205
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=25.934 comm_ms=8.563 filter_wall_ms=6.863 filter_cpu_ms=6.864 write_ms=29.687 total_wall_ms=71.047 total_cpu_ms=44.732
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.103 filter_wall_ms=8.433 filter_cpu_ms=8.434 write_ms=0.000 total_wall_ms=9.536 total_cpu_ms=9.536
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.164 filter_wall_ms=11.922 filter_cpu_ms=11.922 write_ms=0.000 total_wall_ms=14.087 total_cpu_ms=14.088
+TIME rep=5 img=damma.pgm design=mpi image=damma.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.940 filter_wall_ms=11.919 filter_cpu_ms=11.918 write_ms=0.000 total_wall_ms=14.859 total_cpu_ms=14.738
+TOTAL rep=5 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=390.389 total_cpu_ms=132.472
+TOTAL rep=5 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=390.095 total_cpu_ms=176.707
+TOTAL rep=5 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=390.326 total_cpu_ms=182.936
+TOTAL rep=5 img=damma.pgm design=mpi image=damma.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=389.621 total_cpu_ms=182.479
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=84.106 comm_ms=6.177 filter_wall_ms=74.569 filter_cpu_ms=74.566 write_ms=85.681 total_wall_ms=250.533 total_cpu_ms=166.190
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=84.106 comm_ms=6.152 filter_wall_ms=87.614 filter_cpu_ms=87.603 write_ms=66.441 total_wall_ms=244.313 total_cpu_ms=171.402
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=84.106 comm_ms=6.352 filter_wall_ms=74.960 filter_cpu_ms=74.956 write_ms=96.691 total_wall_ms=262.109 total_cpu_ms=175.132
+TOTAL rep=1 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=817.451 total_cpu_ms=469.724
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=81.022 comm_ms=6.179 filter_wall_ms=74.845 filter_cpu_ms=74.842 write_ms=84.877 total_wall_ms=246.923 total_cpu_ms=164.418
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=81.022 comm_ms=6.160 filter_wall_ms=88.381 filter_cpu_ms=88.375 write_ms=66.114 total_wall_ms=241.676 total_cpu_ms=170.742
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=81.022 comm_ms=6.082 filter_wall_ms=74.389 filter_cpu_ms=74.384 write_ms=87.433 total_wall_ms=248.925 total_cpu_ms=164.121
+TOTAL rep=2 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=804.214 total_cpu_ms=458.899
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=84.963 comm_ms=6.396 filter_wall_ms=75.336 filter_cpu_ms=75.332 write_ms=88.511 total_wall_ms=255.205 total_cpu_ms=167.330
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=84.963 comm_ms=6.382 filter_wall_ms=89.536 filter_cpu_ms=89.531 write_ms=67.980 total_wall_ms=248.861 total_cpu_ms=174.222
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=84.963 comm_ms=6.367 filter_wall_ms=75.340 filter_cpu_ms=75.335 write_ms=90.415 total_wall_ms=257.085 total_cpu_ms=168.188
+TOTAL rep=3 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=820.028 total_cpu_ms=465.504
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=78.064 comm_ms=6.079 filter_wall_ms=75.141 filter_cpu_ms=75.127 write_ms=81.543 total_wall_ms=240.827 total_cpu_ms=163.777
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=78.064 comm_ms=5.984 filter_wall_ms=88.482 filter_cpu_ms=88.477 write_ms=62.765 total_wall_ms=235.295 total_cpu_ms=170.191
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=78.064 comm_ms=5.999 filter_wall_ms=75.487 filter_cpu_ms=75.484 write_ms=85.000 total_wall_ms=244.551 total_cpu_ms=164.287
+TOTAL rep=4 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=801.336 total_cpu_ms=466.628
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=86.643 comm_ms=6.818 filter_wall_ms=81.723 filter_cpu_ms=81.721 write_ms=89.578 total_wall_ms=264.761 total_cpu_ms=175.854
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=86.643 comm_ms=6.652 filter_wall_ms=89.560 filter_cpu_ms=89.553 write_ms=65.985 total_wall_ms=248.840 total_cpu_ms=175.053
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=86.643 comm_ms=6.346 filter_wall_ms=74.785 filter_cpu_ms=74.779 write_ms=89.081 total_wall_ms=256.855 total_cpu_ms=168.417
+TOTAL rep=5 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=828.271 total_cpu_ms=478.046
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=96.361 comm_ms=8.295 filter_wall_ms=69.300 filter_cpu_ms=69.297 write_ms=81.307 total_wall_ms=255.263 total_cpu_ms=169.780
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=13.241 filter_wall_ms=69.061 filter_cpu_ms=69.057 write_ms=0.000 total_wall_ms=82.302 total_cpu_ms=82.298
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=96.361 comm_ms=7.992 filter_wall_ms=44.902 filter_cpu_ms=44.891 write_ms=63.668 total_wall_ms=212.922 total_cpu_ms=138.632
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=6.351 filter_wall_ms=44.462 filter_cpu_ms=44.459 write_ms=0.000 total_wall_ms=50.813 total_cpu_ms=50.811
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=96.361 comm_ms=8.114 filter_wall_ms=45.882 filter_cpu_ms=45.865 write_ms=80.147 total_wall_ms=230.502 total_cpu_ms=144.916
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=9.455 filter_wall_ms=44.324 filter_cpu_ms=44.321 write_ms=0.000 total_wall_ms=53.779 total_cpu_ms=53.776
+TOTAL rep=1 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=740.545 total_cpu_ms=394.188
+TOTAL rep=1 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=740.548 total_cpu_ms=537.032
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=77.562 comm_ms=6.605 filter_wall_ms=38.539 filter_cpu_ms=38.537 write_ms=85.817 total_wall_ms=208.524 total_cpu_ms=130.254
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=10.206 filter_wall_ms=38.782 filter_cpu_ms=38.781 write_ms=0.000 total_wall_ms=48.988 total_cpu_ms=48.989
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=77.562 comm_ms=9.160 filter_wall_ms=50.249 filter_cpu_ms=50.247 write_ms=63.923 total_wall_ms=200.894 total_cpu_ms=134.572
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=5.550 filter_wall_ms=51.722 filter_cpu_ms=51.720 write_ms=0.000 total_wall_ms=57.272 total_cpu_ms=57.271
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=77.562 comm_ms=6.301 filter_wall_ms=38.139 filter_cpu_ms=38.116 write_ms=81.367 total_wall_ms=203.369 total_cpu_ms=124.504
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=7.268 filter_wall_ms=36.898 filter_cpu_ms=36.897 write_ms=0.000 total_wall_ms=44.167 total_cpu_ms=44.167
+TOTAL rep=2 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=689.546 total_cpu_ms=350.021
+TOTAL rep=2 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=689.552 total_cpu_ms=488.250
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=81.234 comm_ms=6.686 filter_wall_ms=37.735 filter_cpu_ms=37.734 write_ms=82.540 total_wall_ms=208.195 total_cpu_ms=127.562
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=9.740 filter_wall_ms=38.472 filter_cpu_ms=38.471 write_ms=0.000 total_wall_ms=48.212 total_cpu_ms=48.211
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=81.234 comm_ms=6.525 filter_wall_ms=51.405 filter_cpu_ms=51.388 write_ms=64.585 total_wall_ms=203.748 total_cpu_ms=134.011
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=4.973 filter_wall_ms=50.958 filter_cpu_ms=50.957 write_ms=0.000 total_wall_ms=55.931 total_cpu_ms=55.930
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=81.234 comm_ms=7.180 filter_wall_ms=41.280 filter_cpu_ms=41.277 write_ms=84.456 total_wall_ms=214.150 total_cpu_ms=133.707
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=8.228 filter_wall_ms=40.014 filter_cpu_ms=40.012 write_ms=0.000 total_wall_ms=48.241 total_cpu_ms=48.239
+TOTAL rep=3 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=696.889 total_cpu_ms=354.472
+TOTAL rep=3 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=696.896 total_cpu_ms=491.311
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=80.452 comm_ms=6.896 filter_wall_ms=45.615 filter_cpu_ms=45.614 write_ms=82.186 total_wall_ms=215.148 total_cpu_ms=136.404
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=11.204 filter_wall_ms=45.070 filter_cpu_ms=45.070 write_ms=0.000 total_wall_ms=56.274 total_cpu_ms=56.275
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=80.452 comm_ms=7.201 filter_wall_ms=44.902 filter_cpu_ms=44.883 write_ms=77.867 total_wall_ms=210.421 total_cpu_ms=142.548
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=5.044 filter_wall_ms=44.852 filter_cpu_ms=44.861 write_ms=0.000 total_wall_ms=49.896 total_cpu_ms=49.906
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=80.452 comm_ms=7.139 filter_wall_ms=38.847 filter_cpu_ms=38.833 write_ms=83.610 total_wall_ms=210.047 total_cpu_ms=130.803
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=7.236 filter_wall_ms=38.502 filter_cpu_ms=38.500 write_ms=0.000 total_wall_ms=45.739 total_cpu_ms=45.738
+TOTAL rep=4 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=707.692 total_cpu_ms=367.077
+TOTAL rep=4 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=707.696 total_cpu_ms=503.676
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=79.395 comm_ms=6.732 filter_wall_ms=52.809 filter_cpu_ms=52.808 write_ms=91.456 total_wall_ms=230.392 total_cpu_ms=153.684
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=11.118 filter_wall_ms=52.213 filter_cpu_ms=52.211 write_ms=0.000 total_wall_ms=63.331 total_cpu_ms=63.329
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=79.395 comm_ms=7.586 filter_wall_ms=47.195 filter_cpu_ms=47.188 write_ms=63.295 total_wall_ms=197.470 total_cpu_ms=131.710
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=5.504 filter_wall_ms=47.315 filter_cpu_ms=47.313 write_ms=0.000 total_wall_ms=52.819 total_cpu_ms=52.816
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=79.395 comm_ms=6.793 filter_wall_ms=39.421 filter_cpu_ms=39.419 write_ms=82.989 total_wall_ms=208.598 total_cpu_ms=131.684
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=8.553 filter_wall_ms=37.477 filter_cpu_ms=37.475 write_ms=0.000 total_wall_ms=46.030 total_cpu_ms=46.028
+TOTAL rep=5 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=712.151 total_cpu_ms=375.609
+TOTAL rep=5 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=712.156 total_cpu_ms=503.172
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=83.885 comm_ms=9.635 filter_wall_ms=18.849 filter_cpu_ms=18.848 write_ms=84.501 total_wall_ms=196.870 total_cpu_ms=113.684
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=9.965 filter_wall_ms=19.025 filter_cpu_ms=19.014 write_ms=0.000 total_wall_ms=28.990 total_cpu_ms=28.979
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=12.313 filter_wall_ms=18.888 filter_cpu_ms=18.888 write_ms=0.000 total_wall_ms=31.202 total_cpu_ms=31.201
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=12.505 filter_wall_ms=18.958 filter_cpu_ms=18.958 write_ms=0.000 total_wall_ms=31.463 total_cpu_ms=31.275
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=83.885 comm_ms=10.237 filter_wall_ms=22.531 filter_cpu_ms=22.530 write_ms=74.274 total_wall_ms=190.928 total_cpu_ms=116.606
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=3.115 filter_wall_ms=22.132 filter_cpu_ms=22.132 write_ms=0.000 total_wall_ms=25.247 total_cpu_ms=25.247
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.640 filter_wall_ms=24.544 filter_cpu_ms=24.543 write_ms=0.000 total_wall_ms=29.184 total_cpu_ms=29.183
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=5.946 filter_wall_ms=25.041 filter_cpu_ms=25.040 write_ms=0.000 total_wall_ms=30.986 total_cpu_ms=30.798
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=83.885 comm_ms=11.886 filter_wall_ms=19.413 filter_cpu_ms=19.411 write_ms=86.315 total_wall_ms=201.500 total_cpu_ms=115.108
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.110 filter_wall_ms=19.053 filter_cpu_ms=19.053 write_ms=0.000 total_wall_ms=23.163 total_cpu_ms=23.164
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.883 filter_wall_ms=23.635 filter_cpu_ms=23.633 write_ms=0.000 total_wall_ms=28.518 total_cpu_ms=28.516
+TIME rep=1 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=6.003 filter_wall_ms=24.524 filter_cpu_ms=24.523 write_ms=0.000 total_wall_ms=30.527 total_cpu_ms=30.339
+TOTAL rep=1 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=656.237 total_cpu_ms=301.662
+TOTAL rep=1 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=655.316 total_cpu_ms=449.707
+TOTAL rep=1 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=655.666 total_cpu_ms=452.744
+TOTAL rep=1 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=655.555 total_cpu_ms=452.528
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=92.510 comm_ms=8.894 filter_wall_ms=18.848 filter_cpu_ms=18.848 write_ms=89.520 total_wall_ms=209.772 total_cpu_ms=117.537
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=10.200 filter_wall_ms=18.882 filter_cpu_ms=18.882 write_ms=0.000 total_wall_ms=29.081 total_cpu_ms=29.082
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=12.100 filter_wall_ms=18.751 filter_cpu_ms=18.751 write_ms=0.000 total_wall_ms=30.851 total_cpu_ms=30.852
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=12.145 filter_wall_ms=18.750 filter_cpu_ms=18.750 write_ms=0.000 total_wall_ms=30.895 total_cpu_ms=30.774
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=92.510 comm_ms=18.685 filter_wall_ms=22.218 filter_cpu_ms=22.218 write_ms=72.744 total_wall_ms=206.157 total_cpu_ms=125.823
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.837 filter_wall_ms=31.959 filter_cpu_ms=31.958 write_ms=0.000 total_wall_ms=34.796 total_cpu_ms=34.795
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=15.490 filter_wall_ms=22.233 filter_cpu_ms=22.234 write_ms=0.000 total_wall_ms=37.723 total_cpu_ms=37.725
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=6.926 filter_wall_ms=31.951 filter_cpu_ms=31.950 write_ms=0.000 total_wall_ms=38.877 total_cpu_ms=38.754
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=92.510 comm_ms=8.656 filter_wall_ms=19.641 filter_cpu_ms=19.639 write_ms=89.834 total_wall_ms=210.641 total_cpu_ms=117.199
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.831 filter_wall_ms=18.656 filter_cpu_ms=18.656 write_ms=0.000 total_wall_ms=23.487 total_cpu_ms=23.107
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=6.390 filter_wall_ms=19.605 filter_cpu_ms=19.602 write_ms=0.000 total_wall_ms=25.995 total_cpu_ms=25.993
+TIME rep=2 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=6.275 filter_wall_ms=21.333 filter_cpu_ms=21.332 write_ms=0.000 total_wall_ms=27.608 total_cpu_ms=27.485
+TOTAL rep=2 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=682.376 total_cpu_ms=312.962
+TOTAL rep=2 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=681.869 total_cpu_ms=470.867
+TOTAL rep=2 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=682.068 total_cpu_ms=470.131
+TOTAL rep=2 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=682.187 total_cpu_ms=471.884
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=86.416 comm_ms=9.717 filter_wall_ms=18.966 filter_cpu_ms=18.965 write_ms=88.577 total_wall_ms=203.676 total_cpu_ms=118.569
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=11.240 filter_wall_ms=18.908 filter_cpu_ms=18.908 write_ms=0.000 total_wall_ms=30.149 total_cpu_ms=30.143
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=13.074 filter_wall_ms=18.876 filter_cpu_ms=18.876 write_ms=0.000 total_wall_ms=31.950 total_cpu_ms=31.951
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=12.928 filter_wall_ms=18.973 filter_cpu_ms=18.963 write_ms=0.000 total_wall_ms=31.901 total_cpu_ms=31.738
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=86.416 comm_ms=14.727 filter_wall_ms=22.992 filter_cpu_ms=22.992 write_ms=68.201 total_wall_ms=192.336 total_cpu_ms=120.122
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=3.501 filter_wall_ms=22.618 filter_cpu_ms=22.618 write_ms=0.000 total_wall_ms=26.118 total_cpu_ms=26.119
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=5.647 filter_wall_ms=28.237 filter_cpu_ms=28.235 write_ms=0.000 total_wall_ms=33.884 total_cpu_ms=33.884
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=7.749 filter_wall_ms=28.010 filter_cpu_ms=28.009 write_ms=0.000 total_wall_ms=35.760 total_cpu_ms=35.605
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=86.416 comm_ms=9.561 filter_wall_ms=19.669 filter_cpu_ms=19.668 write_ms=87.099 total_wall_ms=202.745 total_cpu_ms=117.662
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=5.036 filter_wall_ms=18.774 filter_cpu_ms=18.773 write_ms=0.000 total_wall_ms=23.810 total_cpu_ms=23.810
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=6.837 filter_wall_ms=19.883 filter_cpu_ms=19.881 write_ms=0.000 total_wall_ms=26.720 total_cpu_ms=26.719
+TIME rep=3 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=8.790 filter_wall_ms=19.720 filter_cpu_ms=19.719 write_ms=0.000 total_wall_ms=28.510 total_cpu_ms=28.355
+TOTAL rep=3 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=660.098 total_cpu_ms=302.132
+TOTAL rep=3 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=660.053 total_cpu_ms=450.335
+TOTAL rep=3 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=659.796 total_cpu_ms=454.086
+TOTAL rep=3 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=660.059 total_cpu_ms=454.496
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=79.366 comm_ms=9.050 filter_wall_ms=18.965 filter_cpu_ms=18.964 write_ms=87.372 total_wall_ms=194.753 total_cpu_ms=122.274
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=10.309 filter_wall_ms=18.883 filter_cpu_ms=18.883 write_ms=0.000 total_wall_ms=29.192 total_cpu_ms=29.191
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=12.164 filter_wall_ms=18.840 filter_cpu_ms=18.840 write_ms=0.000 total_wall_ms=31.004 total_cpu_ms=31.004
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=12.023 filter_wall_ms=18.972 filter_cpu_ms=18.971 write_ms=0.000 total_wall_ms=30.995 total_cpu_ms=30.793
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=79.366 comm_ms=15.319 filter_wall_ms=22.301 filter_cpu_ms=22.300 write_ms=81.437 total_wall_ms=198.422 total_cpu_ms=137.904
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.723 filter_wall_ms=28.565 filter_cpu_ms=28.565 write_ms=0.000 total_wall_ms=31.288 total_cpu_ms=31.287
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.801 filter_wall_ms=29.114 filter_cpu_ms=29.112 write_ms=0.000 total_wall_ms=33.915 total_cpu_ms=33.914
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=11.169 filter_wall_ms=24.380 filter_cpu_ms=24.378 write_ms=0.000 total_wall_ms=35.549 total_cpu_ms=35.347
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=79.366 comm_ms=13.499 filter_wall_ms=19.766 filter_cpu_ms=19.764 write_ms=85.909 total_wall_ms=198.541 total_cpu_ms=125.801
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=4.641 filter_wall_ms=18.938 filter_cpu_ms=18.935 write_ms=0.000 total_wall_ms=23.579 total_cpu_ms=23.576
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.405 filter_wall_ms=26.537 filter_cpu_ms=26.533 write_ms=0.000 total_wall_ms=30.942 total_cpu_ms=30.939
+TIME rep=4 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=6.367 filter_wall_ms=26.199 filter_cpu_ms=26.198 write_ms=0.000 total_wall_ms=32.566 total_cpu_ms=32.365
+TOTAL rep=4 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=671.680 total_cpu_ms=322.104
+TOTAL rep=4 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=671.718 total_cpu_ms=455.343
+TOTAL rep=4 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=671.416 total_cpu_ms=462.331
+TOTAL rep=4 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=671.712 total_cpu_ms=461.769
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=81.399 comm_ms=9.673 filter_wall_ms=19.020 filter_cpu_ms=19.020 write_ms=95.100 total_wall_ms=205.192 total_cpu_ms=120.869
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=9.273 filter_wall_ms=20.173 filter_cpu_ms=20.173 write_ms=0.000 total_wall_ms=29.446 total_cpu_ms=29.447
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=10.985 filter_wall_ms=20.587 filter_cpu_ms=20.586 write_ms=0.000 total_wall_ms=31.572 total_cpu_ms=31.571
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=12.674 filter_wall_ms=18.969 filter_cpu_ms=18.969 write_ms=0.000 total_wall_ms=31.643 total_cpu_ms=31.462
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=81.399 comm_ms=21.273 filter_wall_ms=22.876 filter_cpu_ms=22.876 write_ms=71.359 total_wall_ms=196.907 total_cpu_ms=125.091
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.806 filter_wall_ms=29.454 filter_cpu_ms=29.453 write_ms=0.000 total_wall_ms=32.260 total_cpu_ms=32.259
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.506 filter_wall_ms=35.978 filter_cpu_ms=35.976 write_ms=0.000 total_wall_ms=40.483 total_cpu_ms=40.482
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=15.260 filter_wall_ms=26.739 filter_cpu_ms=26.738 write_ms=0.000 total_wall_ms=41.999 total_cpu_ms=41.815
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=81.399 comm_ms=9.969 filter_wall_ms=32.736 filter_cpu_ms=32.720 write_ms=107.760 total_wall_ms=231.864 total_cpu_ms=139.897
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=5.077 filter_wall_ms=31.844 filter_cpu_ms=31.840 write_ms=0.000 total_wall_ms=36.921 total_cpu_ms=36.918
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=5.946 filter_wall_ms=33.959 filter_cpu_ms=33.958 write_ms=0.000 total_wall_ms=39.905 total_cpu_ms=39.904
+TIME rep=5 img=damma.ppm design=mpi image=damma.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=9.070 filter_wall_ms=32.857 filter_cpu_ms=32.856 write_ms=0.000 total_wall_ms=41.927 total_cpu_ms=41.745
+TOTAL rep=5 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=707.507 total_cpu_ms=340.788
+TOTAL rep=5 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=707.256 total_cpu_ms=499.904
+TOTAL rep=5 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=707.126 total_cpu_ms=494.351
+TOTAL rep=5 img=damma.ppm design=mpi image=damma.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=707.112 total_cpu_ms=500.764
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=18.982 comm_ms=1.035 filter_wall_ms=16.881 filter_cpu_ms=16.880 write_ms=20.634 total_wall_ms=57.532 total_cpu_ms=35.700
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=18.982 comm_ms=1.087 filter_wall_ms=20.476 filter_cpu_ms=20.477 write_ms=18.195 total_wall_ms=58.741 total_cpu_ms=38.658
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=18.982 comm_ms=1.132 filter_wall_ms=17.428 filter_cpu_ms=17.429 write_ms=19.523 total_wall_ms=57.064 total_cpu_ms=36.843
+TOTAL rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=358.411 total_cpu_ms=121.254
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=19.091 comm_ms=1.118 filter_wall_ms=17.024 filter_cpu_ms=17.025 write_ms=19.680 total_wall_ms=56.913 total_cpu_ms=35.621
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=19.091 comm_ms=1.147 filter_wall_ms=20.780 filter_cpu_ms=20.779 write_ms=18.041 total_wall_ms=59.059 total_cpu_ms=38.598
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=19.091 comm_ms=1.091 filter_wall_ms=16.809 filter_cpu_ms=16.808 write_ms=19.610 total_wall_ms=56.601 total_cpu_ms=35.472
+TOTAL rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=357.392 total_cpu_ms=120.108
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=19.523 comm_ms=1.060 filter_wall_ms=16.694 filter_cpu_ms=16.694 write_ms=20.683 total_wall_ms=57.960 total_cpu_ms=35.273
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=19.523 comm_ms=1.087 filter_wall_ms=20.632 filter_cpu_ms=20.632 write_ms=18.219 total_wall_ms=59.461 total_cpu_ms=38.459
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=19.523 comm_ms=1.083 filter_wall_ms=16.931 filter_cpu_ms=16.930 write_ms=20.518 total_wall_ms=58.055 total_cpu_ms=35.735
+TOTAL rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=359.652 total_cpu_ms=119.396
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=19.139 comm_ms=1.027 filter_wall_ms=16.332 filter_cpu_ms=16.331 write_ms=20.217 total_wall_ms=56.715 total_cpu_ms=34.979
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=19.139 comm_ms=1.075 filter_wall_ms=20.602 filter_cpu_ms=20.601 write_ms=17.994 total_wall_ms=58.810 total_cpu_ms=38.483
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=19.139 comm_ms=1.061 filter_wall_ms=16.955 filter_cpu_ms=16.946 write_ms=20.490 total_wall_ms=57.645 total_cpu_ms=35.682
+TOTAL rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=357.621 total_cpu_ms=119.192
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=1 rank=0 read_ms=19.065 comm_ms=1.110 filter_wall_ms=16.996 filter_cpu_ms=16.988 write_ms=20.373 total_wall_ms=57.543 total_cpu_ms=35.848
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=1 rank=0 read_ms=19.065 comm_ms=1.118 filter_wall_ms=20.836 filter_cpu_ms=20.836 write_ms=18.057 total_wall_ms=59.076 total_cpu_ms=38.865
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=1 rank=0 read_ms=19.065 comm_ms=1.094 filter_wall_ms=16.746 filter_cpu_ms=16.746 write_ms=20.309 total_wall_ms=57.215 total_cpu_ms=35.527
+TOTAL rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=357.939 total_cpu_ms=119.735
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=18.982 comm_ms=1.522 filter_wall_ms=8.608 filter_cpu_ms=8.607 write_ms=20.557 total_wall_ms=49.669 total_cpu_ms=28.020
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.784 filter_wall_ms=8.170 filter_cpu_ms=8.170 write_ms=0.000 total_wall_ms=10.955 total_cpu_ms=10.954
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=18.982 comm_ms=1.721 filter_wall_ms=10.401 filter_cpu_ms=10.402 write_ms=20.677 total_wall_ms=51.781 total_cpu_ms=32.106
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.334 filter_wall_ms=10.322 filter_cpu_ms=10.322 write_ms=0.000 total_wall_ms=11.657 total_cpu_ms=11.656
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=18.982 comm_ms=1.530 filter_wall_ms=8.598 filter_cpu_ms=8.597 write_ms=19.208 total_wall_ms=48.317 total_cpu_ms=27.572
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.899 filter_wall_ms=8.229 filter_cpu_ms=8.229 write_ms=0.000 total_wall_ms=10.128 total_cpu_ms=10.128
+TOTAL rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=346.100 total_cpu_ms=105.257
+TOTAL rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=346.107 total_cpu_ms=143.798
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=19.146 comm_ms=1.463 filter_wall_ms=8.647 filter_cpu_ms=8.646 write_ms=19.896 total_wall_ms=49.151 total_cpu_ms=27.743
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.687 filter_wall_ms=8.201 filter_cpu_ms=8.202 write_ms=0.000 total_wall_ms=10.888 total_cpu_ms=10.889
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=19.146 comm_ms=1.696 filter_wall_ms=10.335 filter_cpu_ms=10.334 write_ms=17.284 total_wall_ms=48.461 total_cpu_ms=28.947
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.287 filter_wall_ms=10.324 filter_cpu_ms=10.323 write_ms=0.000 total_wall_ms=11.611 total_cpu_ms=11.610
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=19.146 comm_ms=1.479 filter_wall_ms=8.582 filter_cpu_ms=8.582 write_ms=18.599 total_wall_ms=47.806 total_cpu_ms=27.417
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.889 filter_wall_ms=8.211 filter_cpu_ms=8.211 write_ms=0.000 total_wall_ms=10.101 total_cpu_ms=10.101
+TOTAL rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=341.532 total_cpu_ms=101.292
+TOTAL rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=341.536 total_cpu_ms=139.279
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=17.474 comm_ms=1.446 filter_wall_ms=8.243 filter_cpu_ms=8.233 write_ms=19.962 total_wall_ms=47.126 total_cpu_ms=27.774
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.226 filter_wall_ms=8.270 filter_cpu_ms=8.270 write_ms=0.000 total_wall_ms=10.496 total_cpu_ms=10.496
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=17.474 comm_ms=1.966 filter_wall_ms=10.367 filter_cpu_ms=10.367 write_ms=18.009 total_wall_ms=47.816 total_cpu_ms=30.775
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.287 filter_wall_ms=10.655 filter_cpu_ms=10.654 write_ms=0.000 total_wall_ms=11.941 total_cpu_ms=11.941
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=17.474 comm_ms=1.420 filter_wall_ms=8.627 filter_cpu_ms=8.627 write_ms=18.935 total_wall_ms=46.456 total_cpu_ms=28.064
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.863 filter_wall_ms=8.212 filter_cpu_ms=8.211 write_ms=0.000 total_wall_ms=10.075 total_cpu_ms=10.074
+TOTAL rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=339.836 total_cpu_ms=102.616
+TOTAL rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=339.840 total_cpu_ms=136.443
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=19.969 comm_ms=1.525 filter_wall_ms=8.571 filter_cpu_ms=8.571 write_ms=20.931 total_wall_ms=50.995 total_cpu_ms=28.272
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.787 filter_wall_ms=8.143 filter_cpu_ms=8.143 write_ms=0.000 total_wall_ms=10.930 total_cpu_ms=10.930
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=19.969 comm_ms=1.789 filter_wall_ms=10.319 filter_cpu_ms=10.318 write_ms=17.849 total_wall_ms=49.926 total_cpu_ms=29.863
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.316 filter_wall_ms=10.328 filter_cpu_ms=10.328 write_ms=0.000 total_wall_ms=11.644 total_cpu_ms=11.644
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=19.969 comm_ms=1.474 filter_wall_ms=8.559 filter_cpu_ms=8.558 write_ms=18.925 total_wall_ms=48.926 total_cpu_ms=27.822
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.836 filter_wall_ms=8.181 filter_cpu_ms=8.180 write_ms=0.000 total_wall_ms=10.017 total_cpu_ms=10.016
+TOTAL rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=343.520 total_cpu_ms=102.586
+TOTAL rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=343.525 total_cpu_ms=141.846
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=0 read_ms=19.010 comm_ms=1.483 filter_wall_ms=8.228 filter_cpu_ms=8.228 write_ms=22.336 total_wall_ms=51.057 total_cpu_ms=29.233
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=2.418 filter_wall_ms=8.080 filter_cpu_ms=8.080 write_ms=0.000 total_wall_ms=10.498 total_cpu_ms=10.498
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=0 read_ms=19.010 comm_ms=1.831 filter_wall_ms=10.195 filter_cpu_ms=10.194 write_ms=16.785 total_wall_ms=47.821 total_cpu_ms=29.062
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.250 filter_wall_ms=10.357 filter_cpu_ms=10.356 write_ms=0.000 total_wall_ms=11.607 total_cpu_ms=11.607
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=0 read_ms=19.010 comm_ms=1.416 filter_wall_ms=8.603 filter_cpu_ms=8.603 write_ms=18.746 total_wall_ms=47.775 total_cpu_ms=27.514
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=1.784 filter_wall_ms=8.264 filter_cpu_ms=8.265 write_ms=0.000 total_wall_ms=10.048 total_cpu_ms=10.050
+TOTAL rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=342.905 total_cpu_ms=102.552
+TOTAL rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=342.908 total_cpu_ms=137.451
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=31.483 comm_ms=4.221 filter_wall_ms=5.612 filter_cpu_ms=5.612 write_ms=25.806 total_wall_ms=67.123 total_cpu_ms=40.278
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.610 filter_wall_ms=6.622 filter_cpu_ms=6.616 write_ms=0.000 total_wall_ms=9.232 total_cpu_ms=9.227
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.189 filter_wall_ms=6.252 filter_cpu_ms=6.231 write_ms=0.000 total_wall_ms=10.441 total_cpu_ms=10.421
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.052 filter_wall_ms=6.916 filter_cpu_ms=6.926 write_ms=0.000 total_wall_ms=9.968 total_cpu_ms=9.973
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=31.483 comm_ms=6.395 filter_wall_ms=5.475 filter_cpu_ms=5.475 write_ms=17.610 total_wall_ms=60.963 total_cpu_ms=38.244
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=0.978 filter_wall_ms=5.630 filter_cpu_ms=5.630 write_ms=0.000 total_wall_ms=6.608 total_cpu_ms=6.608
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.110 filter_wall_ms=8.175 filter_cpu_ms=8.176 write_ms=0.000 total_wall_ms=10.285 total_cpu_ms=10.287
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.468 filter_wall_ms=8.313 filter_cpu_ms=8.314 write_ms=0.000 total_wall_ms=10.780 total_cpu_ms=10.776
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=31.483 comm_ms=3.598 filter_wall_ms=4.330 filter_cpu_ms=4.329 write_ms=19.154 total_wall_ms=58.564 total_cpu_ms=33.797
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.108 filter_wall_ms=4.312 filter_cpu_ms=4.312 write_ms=0.000 total_wall_ms=5.420 total_cpu_ms=5.420
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.465 filter_wall_ms=4.330 filter_cpu_ms=4.330 write_ms=0.000 total_wall_ms=6.795 total_cpu_ms=6.796
+TIME rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.821 filter_wall_ms=4.336 filter_cpu_ms=4.337 write_ms=0.000 total_wall_ms=7.157 total_cpu_ms=7.154
+TOTAL rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=365.483 total_cpu_ms=112.470
+TOTAL rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=365.498 total_cpu_ms=154.590
+TOTAL rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=365.493 total_cpu_ms=154.305
+TOTAL rep=1 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=365.506 total_cpu_ms=154.800
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=19.709 comm_ms=2.993 filter_wall_ms=4.099 filter_cpu_ms=4.099 write_ms=21.492 total_wall_ms=48.292 total_cpu_ms=25.388
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.556 filter_wall_ms=4.352 filter_cpu_ms=4.352 write_ms=0.000 total_wall_ms=6.907 total_cpu_ms=6.909
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.574 filter_wall_ms=4.098 filter_cpu_ms=4.098 write_ms=0.000 total_wall_ms=7.671 total_cpu_ms=7.672
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.228 filter_wall_ms=4.150 filter_cpu_ms=4.151 write_ms=0.000 total_wall_ms=7.378 total_cpu_ms=7.377
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=19.709 comm_ms=2.976 filter_wall_ms=5.158 filter_cpu_ms=5.158 write_ms=16.694 total_wall_ms=44.536 total_cpu_ms=25.682
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=0.745 filter_wall_ms=5.157 filter_cpu_ms=5.157 write_ms=0.000 total_wall_ms=5.902 total_cpu_ms=5.903
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=1.701 filter_wall_ms=5.194 filter_cpu_ms=5.193 write_ms=0.000 total_wall_ms=6.894 total_cpu_ms=6.894
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.183 filter_wall_ms=5.175 filter_cpu_ms=5.175 write_ms=0.000 total_wall_ms=7.358 total_cpu_ms=7.356
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=19.709 comm_ms=2.967 filter_wall_ms=4.295 filter_cpu_ms=4.295 write_ms=20.208 total_wall_ms=47.179 total_cpu_ms=25.193
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.105 filter_wall_ms=4.115 filter_cpu_ms=4.115 write_ms=0.000 total_wall_ms=5.219 total_cpu_ms=5.221
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.157 filter_wall_ms=4.122 filter_cpu_ms=4.122 write_ms=0.000 total_wall_ms=6.279 total_cpu_ms=6.281
+TIME rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.636 filter_wall_ms=4.109 filter_cpu_ms=4.109 write_ms=0.000 total_wall_ms=6.745 total_cpu_ms=6.743
+TOTAL rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=339.469 total_cpu_ms=91.805
+TOTAL rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=339.170 total_cpu_ms=131.246
+TOTAL rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=339.436 total_cpu_ms=132.890
+TOTAL rep=2 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=339.496 total_cpu_ms=132.587
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=20.527 comm_ms=3.041 filter_wall_ms=4.093 filter_cpu_ms=4.093 write_ms=18.600 total_wall_ms=46.261 total_cpu_ms=25.493
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.538 filter_wall_ms=4.350 filter_cpu_ms=4.351 write_ms=0.000 total_wall_ms=6.888 total_cpu_ms=6.890
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.585 filter_wall_ms=4.121 filter_cpu_ms=4.120 write_ms=0.000 total_wall_ms=7.706 total_cpu_ms=7.705
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.039 filter_wall_ms=4.320 filter_cpu_ms=4.320 write_ms=0.000 total_wall_ms=7.359 total_cpu_ms=7.254
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=20.527 comm_ms=6.544 filter_wall_ms=5.030 filter_cpu_ms=5.029 write_ms=16.233 total_wall_ms=48.333 total_cpu_ms=29.058
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=0.764 filter_wall_ms=5.099 filter_cpu_ms=5.099 write_ms=0.000 total_wall_ms=5.863 total_cpu_ms=5.864
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=1.594 filter_wall_ms=8.598 filter_cpu_ms=8.598 write_ms=0.000 total_wall_ms=10.192 total_cpu_ms=10.192
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.104 filter_wall_ms=8.568 filter_cpu_ms=8.568 write_ms=0.000 total_wall_ms=10.672 total_cpu_ms=10.576
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=20.527 comm_ms=2.919 filter_wall_ms=4.140 filter_cpu_ms=4.140 write_ms=17.755 total_wall_ms=45.340 total_cpu_ms=25.018
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=0.874 filter_wall_ms=4.130 filter_cpu_ms=4.130 write_ms=0.000 total_wall_ms=5.003 total_cpu_ms=5.004
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=1.962 filter_wall_ms=4.114 filter_cpu_ms=4.114 write_ms=0.000 total_wall_ms=6.076 total_cpu_ms=6.076
+TIME rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.340 filter_wall_ms=4.116 filter_cpu_ms=4.116 write_ms=0.000 total_wall_ms=6.455 total_cpu_ms=6.361
+TOTAL rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=340.218 total_cpu_ms=95.432
+TOTAL rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=339.748 total_cpu_ms=129.681
+TOTAL rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=340.206 total_cpu_ms=129.983
+TOTAL rep=3 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=340.021 total_cpu_ms=124.564
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=20.705 comm_ms=3.581 filter_wall_ms=4.266 filter_cpu_ms=4.267 write_ms=18.576 total_wall_ms=47.128 total_cpu_ms=25.973
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.856 filter_wall_ms=4.175 filter_cpu_ms=4.176 write_ms=0.000 total_wall_ms=7.031 total_cpu_ms=7.033
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=2.707 filter_wall_ms=5.317 filter_cpu_ms=5.317 write_ms=0.000 total_wall_ms=8.024 total_cpu_ms=8.024
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=1.894 filter_wall_ms=6.112 filter_cpu_ms=6.112 write_ms=0.000 total_wall_ms=8.006 total_cpu_ms=7.912
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=20.705 comm_ms=6.525 filter_wall_ms=5.153 filter_cpu_ms=5.153 write_ms=16.012 total_wall_ms=48.395 total_cpu_ms=29.014
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=0.805 filter_wall_ms=5.087 filter_cpu_ms=5.088 write_ms=0.000 total_wall_ms=5.893 total_cpu_ms=5.895
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=1.673 filter_wall_ms=8.604 filter_cpu_ms=8.603 write_ms=0.000 total_wall_ms=10.277 total_cpu_ms=10.276
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.148 filter_wall_ms=8.585 filter_cpu_ms=8.586 write_ms=0.000 total_wall_ms=10.733 total_cpu_ms=10.639
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=20.705 comm_ms=6.001 filter_wall_ms=4.302 filter_cpu_ms=4.302 write_ms=18.194 total_wall_ms=49.202 total_cpu_ms=28.436
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.067 filter_wall_ms=4.118 filter_cpu_ms=4.119 write_ms=0.000 total_wall_ms=5.185 total_cpu_ms=5.186
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=1.683 filter_wall_ms=7.530 filter_cpu_ms=7.530 write_ms=0.000 total_wall_ms=9.213 total_cpu_ms=9.213
+TIME rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.085 filter_wall_ms=7.569 filter_cpu_ms=7.569 write_ms=0.000 total_wall_ms=9.654 total_cpu_ms=9.559
+TOTAL rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=342.693 total_cpu_ms=97.441
+TOTAL rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=342.664 total_cpu_ms=133.547
+TOTAL rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=342.466 total_cpu_ms=126.672
+TOTAL rep=4 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=342.698 total_cpu_ms=134.176
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=0 read_ms=16.947 comm_ms=3.224 filter_wall_ms=4.150 filter_cpu_ms=4.151 write_ms=20.562 total_wall_ms=44.884 total_cpu_ms=27.490
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.760 filter_wall_ms=4.329 filter_cpu_ms=4.330 write_ms=0.000 total_wall_ms=7.089 total_cpu_ms=7.090
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.860 filter_wall_ms=4.118 filter_cpu_ms=4.118 write_ms=0.000 total_wall_ms=7.978 total_cpu_ms=7.978
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=3.487 filter_wall_ms=4.136 filter_cpu_ms=4.136 write_ms=0.000 total_wall_ms=7.623 total_cpu_ms=7.512
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=0 read_ms=16.947 comm_ms=6.505 filter_wall_ms=5.189 filter_cpu_ms=5.190 write_ms=17.914 total_wall_ms=46.555 total_cpu_ms=31.042
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=0.818 filter_wall_ms=5.110 filter_cpu_ms=5.110 write_ms=0.000 total_wall_ms=5.928 total_cpu_ms=5.929
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=1.738 filter_wall_ms=8.569 filter_cpu_ms=8.569 write_ms=0.000 total_wall_ms=10.307 total_cpu_ms=10.307
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=2.257 filter_wall_ms=8.558 filter_cpu_ms=8.558 write_ms=0.000 total_wall_ms=10.816 total_cpu_ms=10.704
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=0 read_ms=16.947 comm_ms=4.688 filter_wall_ms=4.281 filter_cpu_ms=4.281 write_ms=21.149 total_wall_ms=47.066 total_cpu_ms=29.781
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=0.743 filter_wall_ms=6.054 filter_cpu_ms=6.054 write_ms=0.000 total_wall_ms=6.797 total_cpu_ms=6.797
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.840 filter_wall_ms=4.099 filter_cpu_ms=4.099 write_ms=0.000 total_wall_ms=7.939 total_cpu_ms=7.939
+TIME rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.245 filter_wall_ms=4.095 filter_cpu_ms=4.096 write_ms=0.000 total_wall_ms=8.340 total_cpu_ms=8.230
+TOTAL rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=343.769 total_cpu_ms=103.089
+TOTAL rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=343.012 total_cpu_ms=135.180
+TOTAL rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=343.090 total_cpu_ms=136.295
+TOTAL rep=5 img=sulfur.pgm design=mpi image=sulfur.pgm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=342.836 total_cpu_ms=132.206
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=53.036 comm_ms=4.290 filter_wall_ms=49.943 filter_cpu_ms=49.941 write_ms=51.327 total_wall_ms=158.596 total_cpu_ms=109.877
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=53.036 comm_ms=4.244 filter_wall_ms=56.722 filter_cpu_ms=56.720 write_ms=41.593 total_wall_ms=155.596 total_cpu_ms=112.178
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=53.036 comm_ms=4.255 filter_wall_ms=49.255 filter_cpu_ms=49.244 write_ms=51.144 total_wall_ms=157.690 total_cpu_ms=108.842
+TOTAL rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=591.554 total_cpu_ms=308.432
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=52.553 comm_ms=4.054 filter_wall_ms=48.972 filter_cpu_ms=48.970 write_ms=52.246 total_wall_ms=157.825 total_cpu_ms=108.570
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=52.553 comm_ms=4.044 filter_wall_ms=56.427 filter_cpu_ms=56.416 write_ms=43.230 total_wall_ms=156.254 total_cpu_ms=111.589
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=52.553 comm_ms=4.014 filter_wall_ms=49.360 filter_cpu_ms=49.358 write_ms=52.617 total_wall_ms=158.543 total_cpu_ms=108.901
+TOTAL rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=593.804 total_cpu_ms=306.789
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=52.389 comm_ms=4.023 filter_wall_ms=48.665 filter_cpu_ms=48.662 write_ms=51.302 total_wall_ms=156.379 total_cpu_ms=108.241
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=52.389 comm_ms=4.080 filter_wall_ms=56.919 filter_cpu_ms=56.916 write_ms=41.891 total_wall_ms=155.279 total_cpu_ms=112.263
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=52.389 comm_ms=4.059 filter_wall_ms=49.693 filter_cpu_ms=49.681 write_ms=50.933 total_wall_ms=157.074 total_cpu_ms=109.264
+TOTAL rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=590.813 total_cpu_ms=308.515
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=53.547 comm_ms=3.941 filter_wall_ms=48.364 filter_cpu_ms=48.362 write_ms=54.783 total_wall_ms=160.635 total_cpu_ms=108.257
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=53.547 comm_ms=4.046 filter_wall_ms=56.002 filter_cpu_ms=55.999 write_ms=44.222 total_wall_ms=157.817 total_cpu_ms=111.661
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=53.547 comm_ms=3.966 filter_wall_ms=48.678 filter_cpu_ms=48.676 write_ms=53.919 total_wall_ms=160.110 total_cpu_ms=108.509
+TOTAL rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=597.081 total_cpu_ms=304.458
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=1 rank=0 read_ms=52.950 comm_ms=4.079 filter_wall_ms=48.267 filter_cpu_ms=48.265 write_ms=53.447 total_wall_ms=158.743 total_cpu_ms=107.816
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=1 rank=0 read_ms=52.950 comm_ms=4.023 filter_wall_ms=55.670 filter_cpu_ms=55.668 write_ms=44.729 total_wall_ms=157.372 total_cpu_ms=111.120
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=1 rank=0 read_ms=52.950 comm_ms=3.995 filter_wall_ms=49.082 filter_cpu_ms=49.079 write_ms=54.132 total_wall_ms=160.159 total_cpu_ms=108.942
+TOTAL rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=1 rank=0 filters=3 total_wall_ms=596.216 total_cpu_ms=304.781
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=58.539 comm_ms=4.913 filter_wall_ms=29.264 filter_cpu_ms=29.262 write_ms=57.630 total_wall_ms=150.345 total_cpu_ms=102.993
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=8.615 filter_wall_ms=28.792 filter_cpu_ms=28.790 write_ms=0.000 total_wall_ms=37.407 total_cpu_ms=37.406
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=58.539 comm_ms=4.449 filter_wall_ms=28.823 filter_cpu_ms=28.823 write_ms=39.389 total_wall_ms=131.199 total_cpu_ms=93.444
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=3.917 filter_wall_ms=27.922 filter_cpu_ms=27.921 write_ms=0.000 total_wall_ms=31.840 total_cpu_ms=31.839
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=58.539 comm_ms=4.447 filter_wall_ms=25.569 filter_cpu_ms=25.568 write_ms=45.856 total_wall_ms=134.411 total_cpu_ms=93.362
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=5.521 filter_wall_ms=24.346 filter_cpu_ms=24.336 write_ms=0.000 total_wall_ms=29.867 total_cpu_ms=29.858
+TOTAL rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=531.873 total_cpu_ms=253.301
+TOTAL rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=531.880 total_cpu_ms=315.624
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=60.423 comm_ms=5.776 filter_wall_ms=31.242 filter_cpu_ms=31.241 write_ms=54.384 total_wall_ms=151.825 total_cpu_ms=105.504
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=8.807 filter_wall_ms=31.419 filter_cpu_ms=31.417 write_ms=0.000 total_wall_ms=40.226 total_cpu_ms=40.223
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=60.423 comm_ms=6.237 filter_wall_ms=28.194 filter_cpu_ms=28.192 write_ms=40.354 total_wall_ms=135.208 total_cpu_ms=92.922
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=4.238 filter_wall_ms=28.793 filter_cpu_ms=28.780 write_ms=0.000 total_wall_ms=33.031 total_cpu_ms=33.018
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=60.423 comm_ms=5.573 filter_wall_ms=24.821 filter_cpu_ms=24.820 write_ms=49.948 total_wall_ms=140.765 total_cpu_ms=91.705
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=5.911 filter_wall_ms=24.349 filter_cpu_ms=24.348 write_ms=0.000 total_wall_ms=30.260 total_cpu_ms=30.258
+TOTAL rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=540.486 total_cpu_ms=256.550
+TOTAL rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=540.494 total_cpu_ms=323.049
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=53.275 comm_ms=4.549 filter_wall_ms=24.321 filter_cpu_ms=24.320 write_ms=51.799 total_wall_ms=133.945 total_cpu_ms=85.048
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=7.138 filter_wall_ms=24.387 filter_cpu_ms=24.386 write_ms=0.000 total_wall_ms=31.525 total_cpu_ms=31.524
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=53.275 comm_ms=4.562 filter_wall_ms=28.297 filter_cpu_ms=28.296 write_ms=40.727 total_wall_ms=126.862 total_cpu_ms=84.592
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=3.676 filter_wall_ms=27.803 filter_cpu_ms=27.801 write_ms=0.000 total_wall_ms=31.478 total_cpu_ms=31.477
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=53.275 comm_ms=4.317 filter_wall_ms=25.295 filter_cpu_ms=25.293 write_ms=49.848 total_wall_ms=132.735 total_cpu_ms=84.497
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=4.243 filter_wall_ms=25.257 filter_cpu_ms=25.256 write_ms=0.000 total_wall_ms=29.500 total_cpu_ms=29.499
+TOTAL rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=519.885 total_cpu_ms=232.907
+TOTAL rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=519.890 total_cpu_ms=318.073
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=51.289 comm_ms=4.860 filter_wall_ms=26.397 filter_cpu_ms=26.396 write_ms=52.660 total_wall_ms=135.206 total_cpu_ms=90.699
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=7.493 filter_wall_ms=27.172 filter_cpu_ms=27.171 write_ms=0.000 total_wall_ms=34.664 total_cpu_ms=34.664
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=51.289 comm_ms=5.050 filter_wall_ms=28.532 filter_cpu_ms=28.531 write_ms=47.475 total_wall_ms=132.346 total_cpu_ms=92.445
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=3.672 filter_wall_ms=28.533 filter_cpu_ms=28.532 write_ms=0.000 total_wall_ms=32.204 total_cpu_ms=32.204
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=51.289 comm_ms=4.296 filter_wall_ms=24.827 filter_cpu_ms=24.826 write_ms=49.728 total_wall_ms=130.140 total_cpu_ms=85.306
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=4.731 filter_wall_ms=24.311 filter_cpu_ms=24.310 write_ms=0.000 total_wall_ms=29.043 total_cpu_ms=29.042
+TOTAL rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=531.218 total_cpu_ms=246.169
+TOTAL rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=531.224 total_cpu_ms=320.732
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=0 read_ms=53.127 comm_ms=4.547 filter_wall_ms=24.143 filter_cpu_ms=24.141 write_ms=53.442 total_wall_ms=135.258 total_cpu_ms=84.037
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=6.985 filter_wall_ms=24.217 filter_cpu_ms=24.217 write_ms=0.000 total_wall_ms=31.202 total_cpu_ms=31.201
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=0 read_ms=53.127 comm_ms=4.464 filter_wall_ms=28.201 filter_cpu_ms=28.192 write_ms=42.472 total_wall_ms=128.264 total_cpu_ms=83.829
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=3.510 filter_wall_ms=27.827 filter_cpu_ms=27.827 write_ms=0.000 total_wall_ms=31.337 total_cpu_ms=31.338
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=0 read_ms=53.127 comm_ms=4.686 filter_wall_ms=25.475 filter_cpu_ms=25.473 write_ms=61.104 total_wall_ms=144.391 total_cpu_ms=91.246
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=2 rank=1 read_ms=0.000 comm_ms=5.142 filter_wall_ms=25.010 filter_cpu_ms=25.010 write_ms=0.000 total_wall_ms=30.152 total_cpu_ms=30.152
+TOTAL rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=0 filters=3 total_wall_ms=535.535 total_cpu_ms=239.688
+TOTAL rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=2 rank=1 filters=3 total_wall_ms=535.540 total_cpu_ms=332.859
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=55.401 comm_ms=11.101 filter_wall_ms=12.306 filter_cpu_ms=12.305 write_ms=60.671 total_wall_ms=139.478 total_cpu_ms=85.613
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.321 filter_wall_ms=19.894 filter_cpu_ms=19.894 write_ms=0.000 total_wall_ms=22.215 total_cpu_ms=22.214
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=11.344 filter_wall_ms=12.184 filter_cpu_ms=12.183 write_ms=0.000 total_wall_ms=23.528 total_cpu_ms=23.528
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.247 filter_wall_ms=21.050 filter_cpu_ms=21.049 write_ms=0.000 total_wall_ms=25.296 total_cpu_ms=25.114
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=55.401 comm_ms=17.107 filter_wall_ms=14.015 filter_cpu_ms=14.014 write_ms=45.674 total_wall_ms=132.197 total_cpu_ms=83.282
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.126 filter_wall_ms=24.135 filter_cpu_ms=24.134 write_ms=0.000 total_wall_ms=26.261 total_cpu_ms=26.260
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.212 filter_wall_ms=24.199 filter_cpu_ms=24.198 write_ms=0.000 total_wall_ms=28.411 total_cpu_ms=28.411
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=15.443 filter_wall_ms=14.448 filter_cpu_ms=14.446 write_ms=0.000 total_wall_ms=29.891 total_cpu_ms=29.707
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=55.401 comm_ms=13.969 filter_wall_ms=12.500 filter_cpu_ms=12.499 write_ms=53.381 total_wall_ms=135.250 total_cpu_ms=81.871
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.945 filter_wall_ms=12.100 filter_cpu_ms=12.100 write_ms=0.000 total_wall_ms=15.046 total_cpu_ms=15.045
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.262 filter_wall_ms=21.266 filter_cpu_ms=21.264 write_ms=0.000 total_wall_ms=24.528 total_cpu_ms=24.527
+TIME rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.618 filter_wall_ms=21.206 filter_cpu_ms=21.203 write_ms=0.000 total_wall_ms=25.824 total_cpu_ms=25.640
+TOTAL rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=535.113 total_cpu_ms=229.061
+TOTAL rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=534.828 total_cpu_ms=325.502
+TOTAL rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=534.811 total_cpu_ms=325.952
+TOTAL rep=1 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=534.704 total_cpu_ms=325.128
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=57.964 comm_ms=6.857 filter_wall_ms=12.131 filter_cpu_ms=12.129 write_ms=62.522 total_wall_ms=139.473 total_cpu_ms=85.037
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=7.014 filter_wall_ms=12.276 filter_cpu_ms=12.275 write_ms=0.000 total_wall_ms=19.289 total_cpu_ms=19.289
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=8.617 filter_wall_ms=12.156 filter_cpu_ms=12.156 write_ms=0.000 total_wall_ms=20.773 total_cpu_ms=20.774
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=8.664 filter_wall_ms=12.151 filter_cpu_ms=12.151 write_ms=0.000 total_wall_ms=20.815 total_cpu_ms=20.628
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=57.964 comm_ms=6.431 filter_wall_ms=14.318 filter_cpu_ms=14.317 write_ms=46.627 total_wall_ms=125.340 total_cpu_ms=77.920
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.324 filter_wall_ms=13.933 filter_cpu_ms=13.932 write_ms=0.000 total_wall_ms=16.257 total_cpu_ms=16.257
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.343 filter_wall_ms=13.995 filter_cpu_ms=13.995 write_ms=0.000 total_wall_ms=18.339 total_cpu_ms=18.339
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=5.406 filter_wall_ms=13.957 filter_cpu_ms=13.956 write_ms=0.000 total_wall_ms=19.362 total_cpu_ms=19.175
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=57.964 comm_ms=6.490 filter_wall_ms=12.622 filter_cpu_ms=12.620 write_ms=55.765 total_wall_ms=132.841 total_cpu_ms=79.702
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.486 filter_wall_ms=12.689 filter_cpu_ms=12.688 write_ms=0.000 total_wall_ms=15.175 total_cpu_ms=15.174
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=5.260 filter_wall_ms=12.073 filter_cpu_ms=12.071 write_ms=0.000 total_wall_ms=17.332 total_cpu_ms=17.332
+TIME rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=5.609 filter_wall_ms=12.800 filter_cpu_ms=12.799 write_ms=0.000 total_wall_ms=18.409 total_cpu_ms=18.220
+TOTAL rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=519.849 total_cpu_ms=219.175
+TOTAL rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=519.425 total_cpu_ms=311.271
+TOTAL rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=519.707 total_cpu_ms=310.625
+TOTAL rep=2 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=519.511 total_cpu_ms=313.128
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=53.516 comm_ms=6.267 filter_wall_ms=12.254 filter_cpu_ms=12.254 write_ms=59.404 total_wall_ms=131.442 total_cpu_ms=78.726
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=6.804 filter_wall_ms=12.325 filter_cpu_ms=12.325 write_ms=0.000 total_wall_ms=19.129 total_cpu_ms=19.129
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=8.299 filter_wall_ms=12.199 filter_cpu_ms=12.199 write_ms=0.000 total_wall_ms=20.498 total_cpu_ms=20.499
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=8.104 filter_wall_ms=12.230 filter_cpu_ms=12.229 write_ms=0.000 total_wall_ms=20.333 total_cpu_ms=20.146
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=53.516 comm_ms=6.323 filter_wall_ms=14.112 filter_cpu_ms=14.111 write_ms=46.423 total_wall_ms=120.375 total_cpu_ms=76.158
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.170 filter_wall_ms=13.771 filter_cpu_ms=13.771 write_ms=0.000 total_wall_ms=15.941 total_cpu_ms=15.940
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.109 filter_wall_ms=13.896 filter_cpu_ms=13.896 write_ms=0.000 total_wall_ms=18.004 total_cpu_ms=18.005
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.834 filter_wall_ms=14.318 filter_cpu_ms=14.318 write_ms=0.000 total_wall_ms=19.153 total_cpu_ms=18.967
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=53.516 comm_ms=12.014 filter_wall_ms=14.541 filter_cpu_ms=14.539 write_ms=53.563 total_wall_ms=133.634 total_cpu_ms=82.134
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.830 filter_wall_ms=17.200 filter_cpu_ms=17.199 write_ms=0.000 total_wall_ms=19.029 total_cpu_ms=19.029
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.316 filter_wall_ms=21.485 filter_cpu_ms=21.484 write_ms=0.000 total_wall_ms=24.801 total_cpu_ms=24.801
+TIME rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=13.556 filter_wall_ms=12.366 filter_cpu_ms=12.367 write_ms=0.000 total_wall_ms=25.922 total_cpu_ms=25.736
+TOTAL rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=515.977 total_cpu_ms=213.968
+TOTAL rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=515.891 total_cpu_ms=308.541
+TOTAL rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=515.848 total_cpu_ms=308.675
+TOTAL rep=3 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=515.948 total_cpu_ms=302.023
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=53.233 comm_ms=6.424 filter_wall_ms=12.141 filter_cpu_ms=12.141 write_ms=57.073 total_wall_ms=128.872 total_cpu_ms=76.152
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=6.932 filter_wall_ms=12.215 filter_cpu_ms=12.214 write_ms=0.000 total_wall_ms=19.147 total_cpu_ms=19.147
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=8.252 filter_wall_ms=12.303 filter_cpu_ms=12.303 write_ms=0.000 total_wall_ms=20.555 total_cpu_ms=20.555
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=8.207 filter_wall_ms=12.152 filter_cpu_ms=12.151 write_ms=0.000 total_wall_ms=20.359 total_cpu_ms=20.175
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=53.233 comm_ms=15.531 filter_wall_ms=14.263 filter_cpu_ms=14.263 write_ms=43.440 total_wall_ms=126.467 total_cpu_ms=81.928
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=1.979 filter_wall_ms=22.374 filter_cpu_ms=22.373 write_ms=0.000 total_wall_ms=24.353 total_cpu_ms=24.353
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.284 filter_wall_ms=23.851 filter_cpu_ms=23.849 write_ms=0.000 total_wall_ms=27.135 total_cpu_ms=27.134
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=14.533 filter_wall_ms=13.995 filter_cpu_ms=13.994 write_ms=0.000 total_wall_ms=28.528 total_cpu_ms=28.345
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=53.233 comm_ms=16.058 filter_wall_ms=12.592 filter_cpu_ms=12.591 write_ms=53.611 total_wall_ms=135.494 total_cpu_ms=83.895
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.167 filter_wall_ms=22.361 filter_cpu_ms=22.358 write_ms=0.000 total_wall_ms=24.528 total_cpu_ms=24.526
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=14.289 filter_wall_ms=12.300 filter_cpu_ms=12.300 write_ms=0.000 total_wall_ms=26.589 total_cpu_ms=26.589
+TIME rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=5.505 filter_wall_ms=22.455 filter_cpu_ms=22.440 write_ms=0.000 total_wall_ms=27.959 total_cpu_ms=27.762
+TOTAL rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=520.932 total_cpu_ms=219.745
+TOTAL rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=521.120 total_cpu_ms=314.600
+TOTAL rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=521.103 total_cpu_ms=312.984
+TOTAL rep=4 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=521.120 total_cpu_ms=313.094
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=0 read_ms=58.544 comm_ms=6.814 filter_wall_ms=12.146 filter_cpu_ms=12.145 write_ms=53.528 total_wall_ms=131.032 total_cpu_ms=76.921
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=6.918 filter_wall_ms=12.536 filter_cpu_ms=12.536 write_ms=0.000 total_wall_ms=19.454 total_cpu_ms=19.455
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=8.184 filter_wall_ms=12.245 filter_cpu_ms=12.244 write_ms=0.000 total_wall_ms=20.429 total_cpu_ms=20.429
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=blur threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=8.253 filter_wall_ms=12.386 filter_cpu_ms=12.386 write_ms=0.000 total_wall_ms=20.639 total_cpu_ms=20.546
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=0 read_ms=58.544 comm_ms=7.749 filter_wall_ms=14.045 filter_cpu_ms=14.045 write_ms=46.390 total_wall_ms=126.729 total_cpu_ms=79.444
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.046 filter_wall_ms=13.935 filter_cpu_ms=13.929 write_ms=0.000 total_wall_ms=15.981 total_cpu_ms=15.976
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=3.553 filter_wall_ms=14.480 filter_cpu_ms=14.479 write_ms=0.000 total_wall_ms=18.034 total_cpu_ms=18.033
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=laplace threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=4.203 filter_wall_ms=15.917 filter_cpu_ms=15.916 write_ms=0.000 total_wall_ms=20.120 total_cpu_ms=20.026
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=0 read_ms=58.544 comm_ms=6.703 filter_wall_ms=12.200 filter_cpu_ms=12.199 write_ms=54.267 total_wall_ms=131.715 total_cpu_ms=79.379
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=1 read_ms=0.000 comm_ms=2.728 filter_wall_ms=12.078 filter_cpu_ms=12.077 write_ms=0.000 total_wall_ms=14.806 total_cpu_ms=14.806
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=2 read_ms=0.000 comm_ms=4.147 filter_wall_ms=12.743 filter_cpu_ms=12.741 write_ms=0.000 total_wall_ms=16.890 total_cpu_ms=16.889
+TIME rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm filter=sharpen threads=1 nodes=4 rank=3 read_ms=0.000 comm_ms=5.951 filter_wall_ms=12.206 filter_cpu_ms=12.204 write_ms=0.000 total_wall_ms=18.157 total_cpu_ms=18.062
+TOTAL rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=0 filters=3 total_wall_ms=509.855 total_cpu_ms=209.293
+TOTAL rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=1 filters=3 total_wall_ms=509.578 total_cpu_ms=302.384
+TOTAL rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=2 filters=3 total_wall_ms=509.723 total_cpu_ms=300.818
+TOTAL rep=5 img=sulfur.ppm design=mpi image=sulfur.ppm threads=1 nodes=4 rank=3 filters=3 total_wall_ms=509.764 total_cpu_ms=300.597
