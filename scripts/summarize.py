@@ -58,6 +58,19 @@ def main():
         rows = medians(parse(threads_raw, "THREAD"), ["img", "filter", "region"], ["cpu_ms"])
         write_csv(RES / "d3_threads_cpu.csv", rows, ["img", "filter", "region", "reps", "cpu_ms"])
 
+    total_keys = ["design", "image", "threads", "nodes", "rank", "filters"]
+    total_nums = ["total_wall_ms", "total_cpu_ms"]
+    totals = []
+    for name in ["d2_seq", "d3_threads", "d3_omp", "d4_mpi"]:
+        path = RAW / f"{name}.txt"
+        if path.exists():
+            totals += medians(parse(path, "TOTAL"), total_keys, total_nums)
+    seq_total = {r["image"]: r["total_wall_ms"] for r in totals if r["design"] == "sequential"}
+    for r in totals:
+        base = seq_total.get(r["image"])
+        r["speedup_total"] = round(base / r["total_wall_ms"], 3) if base and r["total_wall_ms"] > 0 else ""
+    write_csv(RES / "totals.csv", totals, total_keys + ["reps"] + total_nums + ["speedup_total"])
+
     seq = {(r["image"], r["filter"]): r for r in tables.get("d2_seq", [])}
     summary = []
 

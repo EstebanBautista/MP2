@@ -23,6 +23,7 @@ double g_stats[kMaxRanks * kStats];
 }  // namespace
 
 int main(int argc, char* argv[]) {
+  Timer total;
   MPI_Init(&argc, &argv);
   int rank = 0, size = 1;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
@@ -184,6 +185,15 @@ int main(int argc, char* argv[]) {
     if (!writeOk) {
       MPI_Finalize();
       return 3;
+    }
+  }
+
+  double mineTotal[2] = {total.wallMs(), total.cpuMs()};
+  MPI_Gather(mineTotal, 2, MPI_DOUBLE, g_stats, 2, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+  if (rank == 0) {
+    for (int r = 0; r < size; ++r) {
+      printTotal("mpi", baseName(opts.input), 1, size, r, opts.filterCount, g_stats[r * 2],
+                 g_stats[r * 2 + 1]);
     }
   }
 

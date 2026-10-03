@@ -20,7 +20,7 @@ run() {
   shift 2
   local rep
   for rep in $(seq 1 "$REPS"); do
-    "$@" | grep -E '^(TIME|THREAD) ' | sed -E "s/^(TIME|THREAD) /\1 rep=$rep img=$img /" >> "$log"
+    "$@" | grep -E '^(TIME|THREAD|TOTAL) ' | sed -E "s/^(TIME|THREAD|TOTAL) /\1 rep=$rep img=$img /" >> "$log"
   done
 }
 

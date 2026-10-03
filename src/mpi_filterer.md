@@ -10,7 +10,9 @@ por contenedor a través de SSH.
 3. Cada nodo aplica los filtros a su franja con `Convolver::applyRegion`.
 4. Rank 0 recoge las franjas filtradas con `MPI_Gatherv` y escribe una salida por filtro.
 5. Cada nodo mide su CPU y su tiempo de pared (filtrado y comunicación); rank 0 los recoge con
-   `MPI_Gather` e imprime una línea `TIME` por nodo.
+   `MPI_Gather` e imprime una línea `TIME` por nodo y filtro.
+6. Al final, cada nodo reporta su tiempo de ejecución total (desde antes de `MPI_Init` hasta el
+   final) y rank 0 imprime una línea `TOTAL` por nodo.
 
 ## Uso
 
