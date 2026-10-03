@@ -9,7 +9,8 @@
 #include "pnm_io.h"
 #include "timer.h"
 
-int runPipeline(const char* design, int threads, int argc, char* argv[], FilterStrategy strategy) {
+int runPipeline(const char* design, int threads, int argc, char* argv[], FilterStrategy strategy,
+                ReportHook afterFilter) {
   Timer total;
   CliOptions opts;
   char err[256];
@@ -42,6 +43,7 @@ int runPipeline(const char* design, int threads, int argc, char* argv[], FilterS
     strategy(f, src, dst);
     const double filterWall = t.wallMs();
     const double filterCpu = t.cpuMs();
+    if (afterFilter != nullptr) afterFilter(f, src);
 
     char path[1024];
     if (opts.singleOutput) {

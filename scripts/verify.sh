@@ -21,7 +21,7 @@ check() {
   fi
 }
 
-for img in feep lena fruit damma sulfur; do
+for img in feep lena fruit puj damma sulfur; do
   for ext in pgm ppm; do
     src="images/$img.$ext"
     if [ ! -f "$src" ]; then continue; fi

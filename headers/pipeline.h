@@ -5,7 +5,9 @@ class Filter;
 class Image;
 
 typedef void (*FilterStrategy)(const Filter& f, const Image& src, Image& dst);
+typedef void (*ReportHook)(const Filter& f, const Image& src);
 
-int runPipeline(const char* design, int threads, int argc, char* argv[], FilterStrategy strategy);
+int runPipeline(const char* design, int threads, int argc, char* argv[], FilterStrategy strategy,
+                ReportHook afterFilter = nullptr);
 
 #endif
