@@ -25,6 +25,7 @@ void test_timer();
 void test_filters();
 void test_convolver();
 void test_cli();
+void test_parallel();
 
 inline void fillPattern(Image& img) {
   const long n = img.size();

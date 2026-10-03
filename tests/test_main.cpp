@@ -12,6 +12,7 @@ int main() {
   test_filters();
   test_convolver();
   test_cli();
+  test_parallel();
   std::printf("%d checks, %d failures\n", g_checks, g_failures);
   return g_failures == 0 ? 0 : 1;
 }
