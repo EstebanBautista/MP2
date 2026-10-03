@@ -1,7 +1,9 @@
 #include "pnm_io.h"
 
+#include <cerrno>
 #include <cstdio>
 #include <cstring>
+#include <new>
 #include <utility>
 
 #include "image.h"
@@ -10,6 +12,7 @@ namespace {
 
 const long kMaxDimension = 100000;
 const long kMaxPixels = 200000000L;
+const int kMaxLineLength = 70;
 
 void setError(char* err, int errLen, const char* message) {
   if (err != nullptr && errLen > 0) std::snprintf(err, errLen, "%s", message);
@@ -29,7 +32,7 @@ struct Cursor {
 void skipSpaceAndComments(Cursor& c) {
   while (c.p < c.end) {
     if (*c.p == '#') {
-      while (c.p < c.end && *c.p != '\n') ++c.p;
+      while (c.p < c.end && *c.p != '\n' && *c.p != '\r') ++c.p;
     } else if (isSpace(*c.p)) {
       ++c.p;
     } else {
@@ -71,6 +74,15 @@ char* readAll(FILE* file, long& len) {
   return buf;
 }
 
+int digitCount(int value) {
+  int n = 1;
+  while (value >= 10) {
+    value /= 10;
+    ++n;
+  }
+  return n;
+}
+
 char* writeInt(char* p, int value) {
   char digits[12];
   int n = 0;
@@ -110,7 +122,13 @@ bool PnmReader::parse(const char* buf, long len, Image& out, char* err, int errL
     return false;
   }
 
-  Image img((int)width, (int)height, channels, (int)maxval);
+  Image img;
+  try {
+    img = Image((int)width, (int)height, channels, (int)maxval);
+  } catch (const std::bad_alloc&) {
+    setError(err, errLen, "memoria insuficiente para la imagen");
+    return false;
+  }
   const long n = img.size();
   int* data = img.data();
   for (long i = 0; i < n; ++i) {
@@ -137,7 +155,14 @@ bool PnmReader::read(const char* path, Image& out, char* err, int errLen) {
     return false;
   }
   long len = 0;
-  char* buf = readAll(file, len);
+  char* buf = nullptr;
+  try {
+    buf = readAll(file, len);
+  } catch (const std::bad_alloc&) {
+    if (!useStdin) std::fclose(file);
+    setError(err, errLen, "memoria insuficiente para leer el archivo");
+    return false;
+  }
   if (!useStdin) std::fclose(file);
   const bool ok = parse(buf, len, out, err, errLen);
   delete[] buf;
@@ -152,9 +177,24 @@ long PnmWriter::toBuffer(const Image& img, char*& buf) {
   char* p = buf + headerLen;
   const int* data = img.data();
   const long rowLen = (long)img.width() * img.channels();
+  int column = 0;
   for (long i = 0; i < n; ++i) {
+    const int len = digitCount(data[i]);
+    if (column > 0) {
+      if (column + 1 + len > kMaxLineLength) {
+        *p++ = '\n';
+        column = 0;
+      } else {
+        *p++ = ' ';
+        ++column;
+      }
+    }
     p = writeInt(p, data[i]);
-    *p++ = ((i + 1) % rowLen == 0) ? '\n' : ' ';
+    column += len;
+    if ((i + 1) % rowLen == 0) {
+      *p++ = '\n';
+      column = 0;
+    }
   }
   return (long)(p - buf);
 }
@@ -162,16 +202,32 @@ long PnmWriter::toBuffer(const Image& img, char*& buf) {
 bool PnmWriter::write(const char* path, const Image& img, char* err, int errLen) {
   FILE* file = std::fopen(path, "wb");
   if (file == nullptr) {
-    if (err != nullptr && errLen > 0) std::snprintf(err, errLen, "no se pudo escribir '%s'", path);
+    if (err != nullptr && errLen > 0) {
+      std::snprintf(err, errLen, "no se pudo escribir '%s': %s", path, std::strerror(errno));
+    }
     return false;
   }
   char* buf = nullptr;
-  const long len = toBuffer(img, buf);
+  long len = 0;
+  try {
+    len = toBuffer(img, buf);
+  } catch (const std::bad_alloc&) {
+    std::fclose(file);
+    std::remove(path);
+    if (err != nullptr && errLen > 0) {
+      std::snprintf(err, errLen, "no se pudo escribir '%s': memoria insuficiente", path);
+    }
+    return false;
+  }
   const size_t written = std::fwrite(buf, 1, (size_t)len, file);
+  const int writeErrno = errno;
   delete[] buf;
   const bool closed = std::fclose(file) == 0;
   if (written != (size_t)len || !closed) {
-    if (err != nullptr && errLen > 0) std::snprintf(err, errLen, "no se pudo escribir '%s'", path);
+    if (err != nullptr && errLen > 0) {
+      std::snprintf(err, errLen, "no se pudo escribir '%s': %s", path, std::strerror(writeErrno));
+    }
+    std::remove(path);
     return false;
   }
   return true;
