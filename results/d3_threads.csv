@@ -1,0 +1,13 @@
+design,image,filter,threads,nodes,rank,reps,read_ms,comm_ms,filter_wall_ms,filter_cpu_ms,write_ms,total_wall_ms,total_cpu_ms
+threads,damma.pgm,blur,4,1,0,5,30.188,0.0,6.926,26.703,30.845,67.94,56.989
+threads,damma.pgm,laplace,4,1,0,5,30.188,0.0,10.629,37.651,25.5,66.189,66.413
+threads,damma.pgm,sharpen,4,1,0,5,30.188,0.0,6.884,26.84,30.035,66.888,56.724
+threads,damma.ppm,blur,4,1,0,5,84.696,0.0,20.304,78.223,86.711,190.718,166.328
+threads,damma.ppm,laplace,4,1,0,5,84.696,0.0,22.928,90.748,67.061,174.678,171.487
+threads,damma.ppm,sharpen,4,1,0,5,84.696,0.0,19.907,78.568,83.687,193.917,166.8
+threads,sulfur.pgm,blur,4,1,0,5,19.562,0.0,4.624,17.65,20.287,44.101,37.446
+threads,sulfur.pgm,laplace,4,1,0,5,19.562,0.0,5.587,21.473,16.866,42.134,40.108
+threads,sulfur.pgm,sharpen,4,1,0,5,19.562,0.0,4.581,17.73,18.969,43.251,36.839
+threads,sulfur.ppm,blur,4,1,0,5,55.765,0.0,12.677,49.702,53.941,123.036,108.711
+threads,sulfur.ppm,laplace,4,1,0,5,55.765,0.0,14.697,57.622,44.102,116.041,113.252
+threads,sulfur.ppm,sharpen,4,1,0,5,55.765,0.0,12.983,50.867,52.331,121.398,109.222
