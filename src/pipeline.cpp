@@ -1,6 +1,7 @@
 #include "pipeline.h"
 
 #include <cstdio>
+#include <new>
 
 #include "cli.h"
 #include "filter.h"
@@ -29,7 +30,13 @@ int runPipeline(const char* design, int threads, int argc, char* argv[], FilterS
 
   for (int i = 0; i < opts.filterCount; ++i) {
     const Filter& f = *opts.filters[i];
-    Image dst = src.cloneEmpty();
+    Image dst;
+    try {
+      dst = src.cloneEmpty();
+    } catch (const std::bad_alloc&) {
+      std::fprintf(stderr, "error: memoria insuficiente para la imagen de salida\n");
+      return 2;
+    }
 
     t.start();
     strategy(f, src, dst);
