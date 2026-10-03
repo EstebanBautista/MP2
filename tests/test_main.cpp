@@ -8,6 +8,7 @@ int g_failures = 0;
 int main() {
   test_image();
   test_pnm_io();
+  test_timer();
   std::printf("%d checks, %d failures\n", g_checks, g_failures);
   return g_failures == 0 ? 0 : 1;
 }

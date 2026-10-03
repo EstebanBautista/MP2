@@ -1,20 +1,18 @@
-Este programa en C++ permite leer archivos de imagen en formato PGM (escala de grises).
+# processor — Diseño 1 (aplicación base)
 
---- Esta incompleto
+Lee una imagen PGM (P2) o PPM (P3) y escribe una copia. Es la base orientada a objetos
+sobre la que se construyen los demás diseños:
 
-## Compilacion
-```bash
-g++ -o ../processor processor.cpp
-```
+- `Image`: dimensiones, canales, valor máximo y píxeles en un arreglo `int*` (RGB intercalado).
+- `PnmReader`: carga el archivo completo, salta comentarios `#` y valida encabezado y datos.
+- `PnmWriter`: arma la salida en un buffer y la escribe de una sola vez.
+- `Timer`: tiempo total (reloj de pared) y tiempo de CPU.
 
-## Ubicacion
+## Compilación (dentro del contenedor)
 
-```bash
-cd ..
-```
+    make processor
 
-## Ejecucion
+## Uso
 
-```bash 
-./processor images/lena.pgm images/lena2.pgm
-```
+    ./processor images/lena.ppm output/lena2.ppm
+    ./processor - output/lena2.ppm < images/lena.ppm    # lectura desde la entrada estándar
